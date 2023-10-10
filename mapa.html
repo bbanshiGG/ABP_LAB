@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+    <title>LICEO ANDRÉS BELLO | MAPA</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="scripts/main.js" async></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="wrapper_menu_list">
+
+            <!-- CONTENEDOR DE SELECTORES -->
+            <div class="wrapper_item grupo-desplegable">
+
+                <!-- PRIMER TIPO DE LOCALIZACION -->
+                <h3 onclick="toggleContenido('COMIDA')">Comida</h3>
+                <div id="COMIDA" class="contenido">
+                    <input type="checkbox" id="COMPLETOS_CHARLES" class="ubicacionCheckbox">
+                    <label for="COMPLETOS_CHARLES">Completos Charles</label>
+                    <br>
+                    <input type="checkbox" id="EL_MASTICON" class="ubicacionCheckbox">
+                    <label for="EL_MASTICON">El Masticón</label>
+                    <br>
+                    <input type="checkbox" id="TONNYS_KING" class="ubicacionCheckbox">
+                    <label for="TONNYS_KING">Tonny's King</label>
+                    <br>
+                    <input type="checkbox" id="ONDE_PANCHITO" class="ubicacionCheckbox">
+                    <label for="ONDE_PANCHITO">Onde Panchito</label>
+                    <br>
+                    <input type="checkbox" id="TSUKI_FUSION" class="ubicacionCheckbox">
+                    <label for="TSUKI_FUSION">Tsuki Fusion</label>
+                </div>
+                
+                <!-- SEGUNDO TIPO DE LOCALIZACION -->
+                <h3 onclick="toggleContenido('AUTOS')">Mecanicos</h3>
+                <div id="AUTOS" class="contenido">
+                    <input type="checkbox" id="MB_AUTOMOTRIZ" class="ubicacionCheckbox">
+                    <label for="MB_AUTOMOTRIZ">MB Automotriz</label>
+                    <br>
+                    <input type="checkbox" id="MASCAR_RACING" class="ubicacionCheckbox">
+                    <label for="MASCAR_RACING">Mascar Racing</label>
+                </div>
+
+                <!-- TERCER TIPO DE LOCALIZACION -->
+                <h3 onclick="toggleContenido('UTILIDAD')">Utilidad</h3>
+                <div id="UTILIDAD" class="contenido">
+                    <input type="checkbox" id="VESET" class="ubicacionCheckbox">
+                    <label for="VESET">VESET</label>
+                    <br>
+                    <input type="checkbox" id="VIDRIERIA_CHAMIA" class="ubicacionCheckbox">
+                    <label for="VIDRIERIA_CHAMIA">Vidrieria Chamia</label>
+                    <br>
+                    <input type="checkbox" id="CYBER_HORNOPIREN" class="ubicacionCheckbox">
+                    <label for="CYBER_HORNOPIREN">Cyber Hornopiren</label>
+                    <br>
+                    <input type="checkbox" id="MADERAS_EL_CASTOR" class="ubicacionCheckbox">
+                    <label for="MADERAS_EL_CASTOR">Maderas el Castor</label>
+                    <br>
+                    <input type="checkbox" id="KING_CY_BARBERSHOP" class="ubicacionCheckbox">
+                    <label for="KING_CY_BARBERSHOP">King CY Barbershop</label>
+                    <br>                    
+                    <input type="checkbox" id="CONTROL_DE_PLAGAS" class="ubicacionCheckbox">
+                    <label for="CONTROL_DE_PLAGAS">Control de plagas</label>
+                    <br>
+                    <input type="checkbox" id="MAIVA_ENVASES" class="ubicacionCheckbox">
+                    <label for="MAIVA_ENVASES">Maiva envases</label>
+                    <br>
+                    <input type="checkbox" id="WE_DENT" class="ubicacionCheckbox">
+                    <label for="WE_DENT">We dent</label>
+                </div>
+
+                <!-- CUARTO TIPO DE LOCALIZACION -->
+                <h3 onclick="toggleContenido('ALIMENTO')">Alimento</h3>
+                <div id="ALIMENTO" class="contenido">
+                    <input type="checkbox" id="AQUI_ESTA_LA_PAPA" class="ubicacionCheckbox">
+                    <label for="AQUI_ESTA_LA_PAPA">Aquí esta la papa</label>
+                    <br>
+                    <input type="checkbox" id="FRUTERIA_EL_EDEN" class="ubicacionCheckbox">
+                    <label for="FRUTERIA_EL_EDEN">Fruteria el Eden</label>
+                    <br>
+                    <input type="checkbox" id="LAS_PAPAS_DE_MUERMO" class="ubicacionCheckbox">
+                    <label for="LAS_PAPAS_DE_MUERMO">Las papas de muermo</label>
+                    <br>
+                    <input type="checkbox" id="LA_GRAN_FERIA_ZUFRUTA_3_0" class="ubicacionCheckbox">
+                    <label for="LA_GRAN_FERIA_ZUFRUTA_3_0">La gran feria zufruta 3.0</label>
+                </div>
+            </div>
+        </div>
+        <!-- MAPA -->
+        <div id="map" class="map"></div>
+    </div>
+
+
+</body>
+</html>
+

@@ -1,0 +1,29 @@
+Nombre De Local: CENTRO MEDICO VICTORIANO
+
+Telefono Contacto: 97424936
+
+Tipo De servicio: -MEDICINA GENERAL
+                  -NUTRICION
+                  -GINECOLOGIA
+                  -PSICOLOGIA
+                  -ENFERMERIA
+                  -MATRONERIA
+                  -KINESIOLOGIA RESPIRATORIA
+
+Horario De Mañana Lunes a Viernes : 10:00 A.M a 19:00 P.M
+
+
+Rango Precio: ENTRE 25.000 A 100.000 DEPENDIENDO EL SERVICIO QUE REQUIERA EL CLIENTE
+ 
+Pagina Web: https://agendamiento.reservo.cl/makereserva/agenda/X0FMr8y0T0ycsv5T4153r7Z6q6l5C6?fbclid=PAAaZ8EwbUj4-JeC1Fp2Mo7afzAM0rb9A5V5hk6RXlv50YUYctyRzOQpeOnH4
+
+Direccion IP : -41.46075, -72.95261
+
+
+
+fotos:
+IMG_CENTRO MEDICO VICTORIANO_1.jpg
+IMG_CENTRO MEDICO VICTORIANO_2.jpg
+IMG_CENTRO MEDICO VICTORIANO_3.jpg
+IMG_CENTRO MEDICO VICTORIANO_4.jpg
+IMG_CENTRO MEDICO VICTORIANO_5.jpg

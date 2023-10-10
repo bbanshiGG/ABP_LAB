@@ -1,0 +1,10 @@
+Nombre del local: Tonny's king
+Nombre dueño: Manuel Valenzuela
+direccion : Parque Industrial 429
+telefono : +56950527949
+Coordenadas: -41.4611284151355, -72.95077873458679
+Servicios:
+	-Comida Rapida
+Horarios:
+	-Lun a Sab 10:00/1:00
+	-Dom 12:00/20:00

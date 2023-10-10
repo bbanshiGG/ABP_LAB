@@ -1,0 +1,15 @@
+Nombre: Mascar Racing
+Direccion: Los lirios 373
+Telefono de contacto:+56973523613
+Coordenadas: -41.460957240346055, -72.94880609292974
+Servicios:
+	-Mecanica ligera
+	-Alineacion
+	-Balanceo
+	-Neumaticos
+	-Tren Delantero
+	-Frenos
+	-Diagnostico y Manutencion general
+Horarios:
+	-Lun a Vier 9:00/18:30
+	-Sab 9:00/14:00

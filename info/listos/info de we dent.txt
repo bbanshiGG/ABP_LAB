@@ -1,0 +1,23 @@
+Nombre de local: we dent
+
+contacto: +56 9 3517 1320
+
+horario de mañana: (lunes a viernes) 09:00 a.m A 13:00 p.m 
+horario de tarde: (lunes a viernes) 14:00 p.m A 19:00 p.m 
+
+direccion Avenida Parque Industrial 481
+
+pagina web: https://convenioswedent.cl/
+
+tipo de servicio:   odontologia general
+                    odontopediatria
+                    endodoncia
+                    armonizacion y estetica facial
+                    implantes dentales 
+                    periodoncia
+                    ortodoncia
+                    rehabilitacion oral
+
+fotos:
+img_we dent_1.jpg
+img_we dent_2.jpg

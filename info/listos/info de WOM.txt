@@ -1,0 +1,18 @@
+Nombre de Local: WOM
+
+contacto:  whatsapp : +56 9 3522 3070
+           servicio cliente: 600 200 1000
+
+horario: (lunes a viernes) 10 a.m A 19:00 p.m
+         (sabado) 10 a.m A 14:00 p.m 
+
+direccion: Avenida Parque Industrial 450
+
+direccion ip: -41.45986416454143, -72.95349011827115
+
+pagina web: https://www.wom.cl/
+
+tipo de servicio:  conexiones inalámbricas y telecomunicaciones
+
+
+
