@@ -4,6 +4,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 var locations = [
+    // Locales utilidades 
     { 
         id: 'VESET',
         name: 'VESET',
@@ -17,8 +18,8 @@ var locations = [
             horarios: "Lunes a jueves de 8:30 AM a 13:45 PM y de 14:00 PM a 18:45 PM.\nViernes de 8:30 AM a 13:45 PM.\nSabado y domingo CERRADO.",
             propietario: null
         },
-        lat: -41.4600048,
-        lng: -72.9483011,
+        lat: -41.46001804998867, 
+        lng: -72.94811153550964,
     },
     { 
         id: 'VIDRIERIA_CHAMIA',
@@ -37,25 +38,9 @@ var locations = [
         lng: -72.9479702329055,
     },
     { 
-        id: 'AQUI_ESTA_LA_PAPA',
-        name: 'Aquí esta la papa',
-        image: "images/AQUI_ESTA_LA_PAPA/IMG_AQUI_ESTA_LA_PAPA_001.JPG",
-        info: {
-            direccion: "Parque Industrial, Puerto Montt, Los Lagos",
-            telefono: null,
-            email: null,
-            website: null,
-            descripcion: "Local de ventas saco de papa, y trigo",
-            horarios: null,
-            propietario: null
-        },
-        lat: -41.461005372851375,
-        lng: -72.95064558496847,
-    },
-    { 
         id: 'CYBER_HORNOPIREN',
         name: 'Cyber Hornopiren',
-        image: "images/CYBER_HORNOPIREN/IMG_CYBER_HORNOPIREN_002.JPG",
+        image: "images/CYBER_HORNOPIREN/IMG_CYBER_HORNOPIREN_002.JPEG",
         info: {
             direccion: "José Miguel Carrera N°212",
             telefono: "652 2255764",
@@ -69,57 +54,9 @@ var locations = [
         lng: -72.9483535720955,
     },
     { 
-        id: 'EDOW_TRIANGLE',
-        name: 'Edow Triangle',
-        image: "images/EDOW_TRIANGLE/EDOW_TRIANGLE001.jpeg",
-        info: {
-            direccion: "Avenida parque industrial N°381",
-            telefono: "+56 988 689 280",
-            email: "servitecapuertomontt@gmail.com",
-            website: "Servitecapuertomontt.cl",
-            descripcion: "Local de ventas saco de papa, y trigo",
-            horarios: "Lunes a viernes 9:30 AM a 18:00 PM.\nSabado y Domingo CERRADO.",
-            propietario: "Fredy Bustamante."
-        },
-        lat: -41.46106716518632,
-        lng: -72.94890878756738,
-    },
-    { 
-        id: 'FRUTERIA_EL_EDEN',
-        name: 'Fruteria El Eden',
-        image: "images/FRUTERIA_EL_EDEN/IMG_FRUTERIA_EL_EDEN_001.jpeg",
-        info: {
-            direccion: "440 Luis Guerra",
-            telefono: "967417196",
-            email: null,
-            website: null,
-            descripcion: "Local de ventas frutas y verduras",
-            horarios: "Desde las 8:00 a 21:00",
-            propietario: "Jose Conquera "
-        },
-        lat: -41.46098602835041,
-        lng: -72.9512317605798,
-    },
-    { 
-        id: 'TONNYS_KING',
-        name: 'Tonny´s King',
-        image: "images/TONNYS_KING/IMG_TONNYS_KING_001.jpeg",
-        info: {
-            direccion: "Parque Industrial 429, Puerto Montt, Los Lagos",
-            telefono: "+56950527949",
-            email: null,
-            website: null,
-            descripcion: "Local de comida rapida",
-            horarios: "Lunes a Sabado 10:00/1:00, Domingo 12:00/20:00",
-            propietario: "Manuel Valenzuela"
-        },
-        lat: -41.4611284151355,
-        lng: -72.95077873458679,
-    },
-    { 
         id: 'FERRETERIA_RELONCAVI',
         name: 'Ferreteria Reloncavi',
-        image: "images/FERRETERIA_RELONCAVI/IMG_FERRETERIA_RELONCAVI_001.JPG",
+        image: "images/FERRETERIA_RELONCAVI/IMG_FERRETERIA_RELONCAVI_001.JPEG",
         info: {
             direccion: "Parque industrial n°405",
             telefono: "659250377",
@@ -165,25 +102,9 @@ var locations = [
         lng: -72.94838567147605,
     },
     { 
-        id: 'MASCAR_RACING',
-        name: 'Mascar Racing',
-        image: "images/MASCAR_RACING/IMG_MASCAR_RACING_001.jpeg",
-        info: {
-            direccion: "Los lirios 373",
-            telefono: "56973523613",
-            email: null,
-            website: null,
-            descripcion: "Mecanica ligera, Alineacion, Balanceo, Neumaticos, Frenos, Diagnostico y Manutencion general",
-            horarios: "Lun a Vier 9:00/18:30, Sab 9:00/14:00",
-            propietario: null
-        },
-        lat: -41.460957240346055,
-        lng: -72.94880609292974,
-    },
-    { 
         id: 'WOM',
         name: 'WOM',
-        image: "images/WOM/IMG_WOM_001.jpeg",
+        image: "images/WOM/IMG_WOM_002.jpeg",
         info: {
             direccion: "Avenida Parque Industrial 450",
             telefono: "+56 9 3522 3070",
@@ -193,10 +114,10 @@ var locations = [
             horarios: "(lunes a viernes) 10 a.m A 19:00 pm, (sabado) 10 am A 14:00 pm",
             propietario: null
         },
-        lat: -41.46114040581125,
-        lng: -72.95349011827115,
+        lat: -41.45989125579157, 
+        lng: -72.95373191222319,
     },
-    { 
+    {
         id: 'CANNAHUE_HOJALATERIA',
         name: 'cannahuen hojalateria',
         image: null,
@@ -212,25 +133,7 @@ var locations = [
         lat: null,
         lng: null,
     },
-    { 
-        //yoyoyyo
-        
-        id: 'LA_GRAN_FERIA_ZUFRUTA_3_0',
-        name: 'La Gran feria Zufruta 3.0',
-        image: "images/LA_GRAN_FERIA_ZUFRUTA/IMG_LA_GRAN_FERIA_ZUFRUTA_001.jpeg",
-        info: {
-            direccion: "232 Jose Miguel Carrera",
-            telefono: "995112102",
-            email: null,
-            website: null,
-            descripcion: "Fruteria, con frutas y verduras B)",
-            horarios: null,
-            propietario: 'Rafael Gonzalez'
-        },
-        lat: -41.46017978717117,
-        lng: -72.94812122582864,
-    },
-    { 
+    {
         id: 'GRAFICA_FERNANDEZ',
         name: 'Grafica Fernandez',
         image: "images/GRAFICA_FERNANDEZ/IMG_GRAFICA FERNANDEZ_001.jpeg",
@@ -246,7 +149,7 @@ var locations = [
         lat: -41.46178175495399,
         lng: -72.94890643475354,
     },
-    { 
+    {
         id: 'CENTRO_MEDICO_VICTORIANO',
         name: 'Centro Medico Victoriano',
         image: "images/CENTRO_MEDICO_VICTORIANO/IMG_CENTRO_MEDICO_VICTORIANO_001.jpeg",
@@ -259,11 +162,10 @@ var locations = [
             horarios: "Lunes a Viernes : 10:00 A.M a 19:00 P.M",
             propietario: null
         },
-        lat: null,
-        lng: null,
+        lat: -41.46044470368143,
+        lng: -72.9538604755147,
     },
-    { 
-      
+    {
         id: 'CONTROL_DE_PLAGAS',
         name: 'Control de plagas',
         image: null,
@@ -281,26 +183,9 @@ var locations = [
         lng: -72.94881523964628,
     },
     { 
-        
-        id: 'COMPLETOS_CHARLES',
-        name: 'Completos charles',
-        image: "images/COMPLETOS_CHARLES/IMG_COMPLETOS_CHARLES_001.jpeg",
-        info: {
-            direccion: "Parque Industrial 108",
-            telefono: "56941976594",
-            email: null,
-            website: null,
-            descripcion: "Venta de completos",
-            horarios: null,
-            propietario: 'Carlos Astorga'
-        },
-        lat: -41.460875689382,
-        lng: -72.9479417315059,
-    },
-    { 
         id: 'MAIVA_ENVASES',
         name: 'Maiva Envases',
-        image: "imges/MAIVA_ENVASES/IMG_MAIVA_ENVASES_001.jpeg",
+        image: "images/MAIVA_ENVASES/IMG_MAIVA_ENVASES_002.jpeg",
         info: {
             direccion: "Jose Miguel Carrera N°373, Puerto Montt",
             telefono: "984516353",
@@ -313,27 +198,10 @@ var locations = [
         lat: -41.4611044,
         lng: -72.9487533,
     },
-    { 
-        id: 'AUTOMOTRIZ_RAMIREZ',
-        name: 'Automotriz Ramirez',
-        image: "images/AUTOMOTRIZ_RAMIREZ/IMG_AUTOMOTRIZ_RAMIREZ_001.jpeg",
-        info: {
-            direccion: "Avenida parque industrial 445",
-            telefono: "+56940744272",
-            email: null,
-            website: null,
-            descripcion: "Automotriz",
-            horarios: null,
-            propietario: null
-        },
-        lat: -41.46096457412498,
-        lng: -72.95126938727941,
-    },
-    { 
-      
+    {
         id: 'WE_DENT',
         name: 'We dent',
-        image: 'images/WE_DENT/IMG_WE_DENT_001.jpeg',
+        image: 'images/WE_DENT/IMG_WE_DENT_002.jpeg',
         info: {
             direccion: "Avenida Parque Industrial 481",
             telefono: "+56 9 3517 1320",
@@ -346,22 +214,6 @@ var locations = [
         },
         lat: -41.46044470368143,
         lng: -72.9538604755147,
-    },
-    { 
-        id: 'EL_MASTICON',
-        name: 'El masticon',
-        image: "images/EL_MASTICON/IMG_EL_MASTICON_001.jpeg",
-        info: {
-            direccion: "Avenida Parque Industrial 393 Población Rotonda",
-            telefono: "+ 56 958024771",
-            email: null,
-            website: null,
-            descripcion: "Sitio para comer",
-            horarios: null,
-            propietario: null
-        },
-        lat: -41.4612624,
-        lng: -72.9522994,
     },
     { 
         id: 'KING_CY_BARBERSHOP',
@@ -379,87 +231,6 @@ var locations = [
         lat:  -41.46140738281738,
         lng:  -72.94875419540126,
     },
-    { 
-        
-        id: 'MB_AUTOMOTRIZ',
-        name: 'Mb Automotriz',
-        image: "images/MB_AUTOMOTRIZ/IMG_MB_AUTOMOTRIZ_001.jpeg",
-        info: {
-            direccion: "453 Parque Industrial",
-            telefono: "+56986317670",
-            email: null,
-            website: null,
-            descripcion: "Centro mecanico",
-            horarios: 'Lunes a Viernes: 9:30AM a 17:30PM',
-            propietario: null
-        },
-        lat: -41.4608193,
-        lng: -72.9510124,
-    },
-    {   
-        id: 'LAS_PAPAS_DE_MUERMO',
-        name: 'Las papas de muermo',
-        image: "images/LAS_PAPAS_DE_MUERMO/IMG_LAS_PAPAS_DE_MUERMO_001.jpeg",
-        info: {
-            direccion: "Parque Industrial 108",
-            telefono: "965332010",
-            email: null,
-            website: null,
-            descripcion: "Venta de avena, trigo y papas.",
-            horarios: 'Lunes a Viernes: 8:30AM a 10:00PM',
-            propietario: null
-        },
-        lat: -41.4614272,
-        lng: -72.9493075,
-    },
-    {   
-        id: 'ONDE_PANCHITO',
-        name: 'Onde Panchito',
-        image: "images/ONDE_PANCHITO/IMG_ONDE_PANCHITO_001.jpeg",
-        info: {
-            direccion: "Av. Parque industrial 410",
-            telefono: "966430750",
-            email: null,
-            website: null,
-            descripcion: "venta de comidas preparadas",
-            horarios: '12 a.m  4p.m de Lunes a Viernes, Sabado y Domingo cerrado',
-            propietario: null
-        },
-        lat: -41.46115121390741,
-        lng: -72.94992050582246,
-    },
-    {   
-        id: 'LAS_PAPAS_DE_MUERMO',
-        name: 'Las papas de muermo',
-        image: "images/LAS_PAPAS_DE_MUERMO/IMG_LAS_PAPAS_DE_MUERMO_001.jpeg",
-        info: {
-            direccion: "Parque Industrial 108",
-            telefono: "965332010",
-            email: null,
-            website: null,
-            descripcion: "Venta de avena, trigo y papas.",
-            horarios: 'Lunes a Viernes: 8:30AM a 10:00PM',
-            propietario: null
-        },
-        lat: -41.4614272,
-        lng: -72.9493075,
-    },
-    {   
-        id: 'CAR_CLEAN',
-        name: 'Car Clean',
-        image: "images/CAR_CLEAN/IMG_CAR_CLEAN_001.jpeg",
-        info: {
-            direccion: "avenida parque industrial 400",
-            telefono: "+56 9 5010 8340",
-            email:  'carclean57@gmail.com',
-            website: null,
-            descripcion: "LAVADO DE AUTOS",
-            horarios: null,
-            propietario: null
-        },
-        lat: -41.45976710661611,
-        lng: -72.94867002091637,
-    },
     {   
         id: 'MADERAS_EL_CASTOR',
         name: 'Maderas el castor',
@@ -476,8 +247,122 @@ var locations = [
         lat: -41.46074043942762,
         lng: -72.9530957115375,
     },
+    // Locales Alimenos
+    { 
+        id: 'AQUI_ESTA_LA_PAPA',
+        name: 'Aquí esta la papa',
+        image: "images/AQUI_ESTA_LA_PAPA/IMG_AQUI_ESTA_LA_PAPA_001.JPG",
+        info: {
+            direccion: "Parque Industrial, Puerto Montt, Los Lagos",
+            telefono: null,
+            email: null,
+            website: null,
+            descripcion: "Local de ventas saco de papa, y trigo",
+            horarios: null,
+            propietario: null
+        },
+        lat: -41.461005372851375,
+        lng: -72.95064558496847,
+    },
+    { 
+        id: 'FRUTERIA_EL_EDEN',
+        name: 'Fruteria El Eden',
+        image: "images/FRUTERIA_EL_EDEN/IMG_FRUTERIA_EL_EDEN_001.jpeg",
+        info: {
+            direccion: "440 Luis Guerra",
+            telefono: "967417196",
+            email: null,
+            website: null,
+            descripcion: "Local de ventas frutas y verduras",
+            horarios: "Desde las 8:00 a 21:00",
+            propietario: "Jose Conquera "
+        },
+        lat: -41.46098602835041,
+        lng: -72.9512317605798,
+    },
+    { 
+        id: 'LA_GRAN_FERIA_ZUFRUTA_3_0',
+        name: 'La Gran feria Zufruta 3.0',
+        image: "images/LA_GRAN_FERIA_ZUFRUTA/IMG_LA_GRAN_FERIA_ZUFRUTA_001.jpeg",
+        info: {
+            direccion: "232 Jose Miguel Carrera",
+            telefono: "995112102",
+            email: null,
+            website: null,
+            descripcion: "Fruteria, con frutas y verduras B)",
+            horarios: null,
+            propietario: 'Rafael Gonzalez'
+        },
+        lat: -41.46017978717117,
+        lng: -72.94812122582864,
+    },
     {   
-        id: 'TUKI_FUSION ',
+        id: 'LAS_PAPAS_DE_MUERMO',
+        name: 'Las papas de muermo',
+        image: "images/LAS_PAPAS_DE_MUERMO/IMG_LAS_PAPAS_DE_MUERMO_001.jpeg",
+        info: {
+            direccion: "Parque Industrial 108",
+            telefono: "965332010",
+            email: null,
+            website: null,
+            descripcion: "Venta de avena, trigo y papas.",
+            horarios: 'Lunes a Viernes: 8:30AM a 10:00PM',
+            propietario: null
+        },
+        lat: -41.4614272,
+        lng: -72.9493075,
+    },
+    // Locales comida rapida 
+    { 
+        id: 'TONNYS_KING',
+        name: 'Tonny´s King',
+        image: "images/TONNYS_KING/IMG_TONNYS_KING_005.jpeg",
+        info: {
+            direccion: "Parque Industrial 429, Puerto Montt, Los Lagos",
+            telefono: "+56950527949",
+            email: null,
+            website: null,
+            descripcion: "Local de comida rapida",
+            horarios: "Lunes a Sabado 10:00/1:00, Domingo 12:00/20:00",
+            propietario: "Manuel Valenzuela"
+        },
+        lat: -41.4611284151355,
+        lng: -72.95077873458679,
+    },
+    {
+        id: 'COMPLETOS_CHARLES',
+        name: 'Completos charles',
+        image: "images/COMPLETOS_CHARLES/IMG_COMPLETOS_CHARLES_001.jpeg",
+        info: {
+            direccion: "Parque Industrial 108",
+            telefono: "56941976594",
+            email: null,
+            website: null,
+            descripcion: "Venta de completos",
+            horarios: null,
+            propietario: 'Carlos Astorga'
+        },
+        lat: -41.46098653922191,
+        lng: -72.94794819983693,
+    },
+    { 
+        id: 'EL_MASTICON',
+        name: 'El masticon',
+        image: "images/EL_MASTICON/IMG_EL_MASTICON_001.jpeg",
+        info: {
+            direccion: "Avenida Parque Industrial 393 Población Rotonda",
+            telefono: "+ 56 958024771",
+            email: null,
+            website: null,
+            descripcion: "Sitio para comer",
+            horarios: null,
+            propietario: null
+        },
+        lat: -41.4612624,
+        lng: -72.9522994,
+    },
+    {   
+        id: 'TSUKI_FUSION ',
         name: 'Tsuki Fusion',
         image: "images/TSUKI_FUSION/IMG_TSUKI_FUSION_001.jpeg",
         info: {
@@ -489,8 +374,105 @@ var locations = [
             horarios: 'De las 11:00 a las 21:00',
             propietario: 'Jenifer Degens'
         },
-        lat: null,
-        lng: null,
+        lat: -41.46084437588396, 
+        lng: -72.95156065359845,
+    },
+    {   
+        id: 'ONDE_PANCHITO',
+        name: 'Onde Panchito',
+        image: "images/ONDE_PANCHITO/IMG_ONDE_PANCHITO_001.jpeg",
+        info: {
+            direccion: "Av. Parque industrial 410",
+            telefono: "966430750",
+            email: null,
+            website: null,
+            descripcion: "venta de comidas preparadas",
+            horarios: '12 a.m  4p.m de Lunes a Viernes, Sabado y Domingo cerrado',
+            propietario: null
+        },
+        lat: -41.46084437588396,
+        lng: -72.95156065359845,
+    },
+    // Locales Mecanicos
+    { 
+        id: 'MASCAR_RACING',
+        name: 'Mascar Racing',
+        image: "images/MASCAR_RACING/IMG_MASCAR_RACING_001.jpeg",
+        info: {
+            direccion: "Los lirios 373",
+            telefono: "56973523613",
+            email: null,
+            website: null,
+            descripcion: "Mecanica ligera, Alineacion, Balanceo, Neumaticos, Frenos, Diagnostico y Manutencion general",
+            horarios: "Lun a Vier 9:00/18:30, Sab 9:00/14:00",
+            propietario: null
+        },
+        lat: -41.460957240346055,
+        lng: -72.94880609292974,
+    },
+    {
+        id: 'MB_AUTOMOTRIZ',
+        name: 'Mb Automotriz',
+        image: "images/MB_AUTOMOTRIZ/IMG_MB_AUTOMOTRIZ_001.jpeg",
+        info: {
+            direccion: "453 Parque Industrial",
+            telefono: "+56986317670",
+            email: null,
+            website: null,
+            descripcion: "Centro mecanico",
+            horarios: 'Lunes a Viernes: 9:30AM a 17:30PM',
+            propietario: null
+        },
+        lat: -41.4608193,
+        lng: -72.9510124,
+    },
+    {
+        id: 'AUTOMOTRIZ_RAMIREZ',
+        name: 'Automotriz Ramirez',
+        image: "images/AUTOMOTRIZ_RAMIREZ/IMG_AUTOMOTRIZ_RAMIREZ_001.jpeg",
+        info: {
+            direccion: "Avenida parque industrial 445",
+            telefono: "+56940744272",
+            email: null,
+            website: null,
+            descripcion: "Automotriz",
+            horarios: null,
+            propietario: null
+        },
+        lat: -41.46096457412498,
+        lng: -72.95126938727941,
+    },
+    {
+        id: 'CAR_CLEAN',
+        name: 'Car Clean',
+        image: "images/CAR_CLEAN/IMG_CAR_CLEAN_001.jpeg",
+        info: {
+            direccion: "avenida parque industrial 400",
+            telefono: "+56 9 5010 8340",
+            email:  'carclean57@gmail.com',
+            website: null,
+            descripcion: "LAVADO DE AUTOS",
+            horarios: null,
+            propietario: null
+        },
+        lat: -41.45976710661611,
+        lng: -72.94867002091637,
+    },
+    { 
+        id: 'EDOW_TRIANGLE',
+        name: 'Edow Triangle',
+        image: "images/EDOW_TRIANGLE/IMG_EDOW_TRIANGLE_001.jpeg",
+        info: {
+            direccion: "Avenida parque industrial N°381",
+            telefono: "+56 988 689 280",
+            email: "servitecapuertomontt@gmail.com",
+            website: "Servitecapuertomontt.cl",
+            descripcion: null,
+            horarios: "Lunes a viernes 9:30 AM a 18:00 PM.\nSabado y Domingo CERRADO.",
+            propietario: "Fredy Bustamante."
+        },
+        lat: -41.46106716518632,
+        lng: -72.94890878756738,
     },
 ];
 
