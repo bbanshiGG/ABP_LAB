@@ -1,7 +1,0 @@
-Nombre: aquí está la papa
-Numero: 
-Direccion: Parque Industrial, Puerto Montt, Los Lagos
-Cordenada: -41.461005372851375, -72.95064558496847
-Ocupacion: Vender Papas y Avenas
-Horario: 
-Página Web:
