@@ -362,7 +362,7 @@ var locations = [
         lng: -72.9522994,
     },
     {   
-        id: 'TSUKI_FUSION ',
+        id: 'TSUKI_FUSION',
         name: 'Tsuki Fusion',
         image: "images/TSUKI_FUSION/IMG_TSUKI_FUSION_001.jpeg",
         info: {
@@ -390,8 +390,8 @@ var locations = [
             horarios: '12 a.m  4p.m de Lunes a Viernes, Sabado y Domingo cerrado',
             propietario: null
         },
-        lat: -41.46084437588396,
-        lng: -72.95156065359845,
+        lat: -41.46115121390741,
+        lng: -72.94992050582246,
     },
     // Locales Mecanicos
     { 
