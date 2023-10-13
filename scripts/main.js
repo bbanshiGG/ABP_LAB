@@ -362,7 +362,7 @@ var locations = [
         lng: -72.9522994,
     },
     {   
-        id: 'TSUKI_FUSION',
+        id: 'TSUKI_FUSION ',
         name: 'Tsuki Fusion',
         image: "images/TSUKI_FUSION/IMG_TSUKI_FUSION_001.jpeg",
         info: {
