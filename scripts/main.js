@@ -493,7 +493,7 @@ locations.forEach(function(location) {
     marker.bindPopup(popupContent);
     markers[location.id] = marker;
 });
-    
+
 // Función para mostrar u ocultar marcadores según las selecciones de los checkboxes
 function actualizarMarcadores() {
     var checkboxes = document.querySelectorAll('.ubicacionCheckbox');
@@ -520,7 +520,7 @@ function toggleContenido(id) {
     if (contenido.style.display === 'none' || contenido.style.display === '') {
         contenido.style['border-bottom'] = 'none'
         contenido.style.display = 'block';
-        contenido.style['border-bottom'] = '2px solid rgb(255, 255, 0)'
+        
     } else {
         contenido.style.display = 'none';
         contenido.style['border-bottom'] = 'none'
