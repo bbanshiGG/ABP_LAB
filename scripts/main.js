@@ -485,35 +485,73 @@ var markers = {};
 locations.forEach(function(location) {
     var marker = L.marker([location.lat, location.lng]);
     var popupContent = `
-    <img src="${location.image}" alt="Imagen de ${location.name}" height="240" width="240">
-    <table border>
+    <img src="${location.image}" alt="Imagen de ${location.name}" height="240" width="240" style="display: flex; padding: 10px;">
+    <table border="1">
         <caption>
             <b>${location.name}</b>
         </caption>
         <tbody>
-        <tr>
-            <td colspan="2" style="font-weight: 700; font-style: bold;">INFORMACIÓN</td>
-        </tr>
-        <tr>
-          <th scope="row">Tel. Contacto</th>
-          <td>${location.info.telefono ?? "No hay telefono de contacto disponible."}</td>
-        </tr>
-        <tr>
-        <th scope="row">E-Mail</th>
-        <td>${location.info.email ?? "No hay E-mail disponible."}</td>
-        </tr>
-        <tr>
-          <th scope="row">Dirección</th>
-          <td>${location.info.direccion ?? "No cuenta con dirección."}</td>
-        </tr>    
-        <tr>
-        <th scope="row">Website</th>
-            <td><a href=${location.info.website} target="_blank">${location.info.website ?? "No cuenta con sitio web."}</a></td>
-        </tr>    
-        <tr>
-          <th scope="row">Horarios</th>
-          <td>${location.info.horarios ?? "No hay horarios disponibles"}</td>
-        </tr>
+        ${
+            location.info.telefono 
+            ?
+            `
+            <tr>
+                <th scope="row">Telefono de Contacto</th>
+                <td>${location.info.telefono}</td>
+            </tr>
+            `
+            :
+            ``
+        } 
+        ${
+            location.info.email 
+            ? 
+            `
+            <tr>
+                <th scope="row">E-Mail</th>
+                <td>${location.info.email}</td>
+            </tr>
+            `
+            : 
+            ``
+        }
+        ${
+            location.info.direccion 
+            ?
+            `
+            <tr>
+                <th scope="row">Dirección</th>
+                <td>${location.info.direccion}</td>
+            </tr>
+            `
+            :
+            ``
+        } 
+        ${
+            location.info.website 
+            ?
+            `
+            <tr>
+                <th scope="row">Website</th>
+                <td><a href="https://${location.info.website}" target="_blank">${location.info.website}</a></td>
+            </tr>
+            `
+            :
+            ``
+        } 
+        ${
+            location.info.horarios 
+            ?
+            `
+            <tr>
+                <th scope="row">Horarios</th>
+                <td>${location.info.horarios}</td>
+
+            </tr>
+            `
+            :
+            ``
+        } 
       </tbody>
     </table>
     `
