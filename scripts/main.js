@@ -64,7 +64,7 @@ var locations = [
             website: "http://www.reloncaviservicios.cl/",
             descripcion: "Ferreteria",
             horarios: "Lunes a viernes 8:30 AM a 18:30 PM.\nSabado y Domingo CERRADO.",
-            propietario: "tuvieja"
+            propietario: null
         },
         lat: -41.46114040581125,
         lng: -72.95001703065795,
@@ -75,12 +75,12 @@ var locations = [
         image: "images/CENTRO_DE_BUCEO_ECOSUB/IMG_CENTRO_DE_BUCEO_ECOSUB_001.jpeg",
         info: {
             direccion: "Calle Panamericana Nte. 510, 5500549 Puerto Montt, Los Lagos",
-            telefono: "8215 8840",
+            telefono: "82158840",
             email: null,
             website: "https://www.ecosub.cl/",
             descripcion: "EMPRESA DE COMPRA DE ARTICULOS RELACIONADOS AL BUCEO",
             horarios: "Horario De Mañana Lunes a Viernes : 9:00 A.M a 17:00 P.M, Horario De Sabado : 10:00 P.M hasta las 13:00 P.M",
-            propietario: "noide"
+            propietario: null
         },
         lat: -41.45759,
         lng: -72.95415,
@@ -170,13 +170,12 @@ var locations = [
         name: 'Control de plagas',
         image: null,
         info: {
-            direccion: "",
+            direccion: null,
             telefono: "652255131",
             email:'jefeoperaciones@esamltda.cl',
             website: 'https://www.esamltda.cl/',
             descripcion: "EMPRESA DE ORDEN AMBIENTAL",
-            horarios: '08:15 A.M a 13:00 P.M(lunes a viernes(Mañana)),13:30 P.M hasta las 18:00 P.M(lunes a viernes(tarde))'
-            ,
+            horarios: '08:15 A.M a 13:00 P.M(lunes a viernes(Mañana)),13:30 P.M hasta las 18:00 P.M(lunes a viernes(tarde))',
             propietario: 'Empresa(ESAM LIMITADA)'
         },
         lat: -41.461680247810115,
@@ -208,8 +207,7 @@ var locations = [
             email:'contacto@convenioswedent.cl',
             website: 'https://convenioswedent.cl/',
             descripcion: "Local de servicios de odontologia",
-            horarios: 'horario de mañana:(lunes a viernes) 09:00 a.m A 13:00 p.m, Horario de tarde: (lunes a viernes) 14:00 p.m A 19:00 p.m '
-            ,
+            horarios: 'horario de mañana:(lunes a viernes) 09:00 a.m A 13:00 p.m, Horario de tarde: (lunes a viernes) 14:00 p.m A 19:00 p.m ',
             propietario: 'Empresa(ESAM LIMITADA)'
         },
         lat: -41.46044470368143,
@@ -486,10 +484,39 @@ var markers = {};
 
 locations.forEach(function(location) {
     var marker = L.marker([location.lat, location.lng]);
-    var popupContent = '<h3>' + location.name + '</h3>';
-    if (location.image) {
-        popupContent += '<img src="' + location.image + '" alt="' + location.name + '" style="height: 240px; width: 240px;">';
-    }
+    var popupContent = `
+    <img src="${location.image}" alt="Imagen de ${location.name}" height="240" width="240">
+    <table border>
+        <caption>
+            <b>${location.name}</b>
+        </caption>
+        <tbody>
+        <tr>
+            <td colspan="2" style="font-weight: 700; font-style: bold;">INFORMACIÓN</td>
+        </tr>
+        <tr>
+          <th scope="row">Tel. Contacto</th>
+          <td>${location.info.telefono ?? "No hay telefono de contacto disponible."}</td>
+        </tr>
+        <tr>
+        <th scope="row">E-Mail</th>
+        <td>${location.info.email ?? "No hay E-mail disponible."}</td>
+        </tr>
+        <tr>
+          <th scope="row">Dirección</th>
+          <td>${location.info.direccion ?? "No cuenta con dirección."}</td>
+        </tr>    
+        <tr>
+        <th scope="row">Website</th>
+            <td><a href=${location.info.website} target="_blank">${location.info.website ?? "No cuenta con sitio web."}</a></td>
+        </tr>    
+        <tr>
+          <th scope="row">Horarios</th>
+          <td>${location.info.horarios ?? "No hay horarios disponibles"}</td>
+        </tr>
+      </tbody>
+    </table>
+    `
     marker.bindPopup(popupContent);
     markers[location.id] = marker;
 });
