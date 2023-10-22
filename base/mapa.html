@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+
+<head>
+    <title>LICEO ANDRÉS BELLO | MAPA</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="scripts/main.js" async></script>
+</head>
+
+<body>
+    <span class="horizontal-list">
+        <a href="http://liceoandresbellopm.cl/"><img src="images/IMAGENES_PAG/INSIGNIA_LICEO.png" alt width="40px"></a>
+        <h1>Liceo Andres Bello</h1>
+    </span>
+
+    <div class="wrapper">
+
+
+        <!-- CONTENEDOR DE SELECTORES -->
+        <div class="wrapper_item grupo-desplegable">
+
+            <!-- PRIMER TIPO DE LOCALIZACION -->
+            <h3 onclick="toggleContenido('UTILIDADES')">Utilidades</h3>
+            <div id="UTILIDADES" class="contenido">
+                <input type="checkbox" id="VESET" class="ubicacionCheckbox">
+                <label for="VESET">Veset</label>
+                <br>
+                <input type="checkbox" id="VIDRIERIA_CHAMIA" class="ubicacionCheckbox">
+                <label for="VIDRIERIA_CHAMIA">Vidrieria Chamia</label>
+                <br>
+                <input type="checkbox" id="CYBER_HORNOPIREN" class="ubicacionCheckbox">
+                <label for="CYBER_HORNOPIREN">Cyber Hornopiren</label>
+                <br>
+                <input type="checkbox" id="FERRETERIA_RELONCAVI" class="ubicacionCheckbox">
+                <label for="FERRETERIA_RELONCAVI">Ferreteria Reloncavi</label>
+                <br>
+                <input type="checkbox" id="CENTRO_DE_BUCEO_ECOSUB" class="ubicacionCheckbox">
+                <label for="CENTRO_DE_BUCEO_ECOSUB">Cetro de buseo EcoSub</label>
+                <br>
+                <input type="checkbox" id="SOLMEC" class="ubicacionCheckbox">
+                <label for="SOLMEC">Solmec</label>
+                <br>
+                <input type="checkbox" id="WOM" class="ubicacionCheckbox">
+                <label for="WOM">WOM</label>
+                <br>
+                <input type="checkbox" id="CANNAHUE_HOJALATERIA" class="ubicacionCheckbox">
+                <label for="CANNAHUE_HOJALATERIA">Cannahue Hojalateria</label>
+                <br>
+                <input type="checkbox" id="GRAFICA_FERNANDEZ" class="ubicacionCheckbox">
+                <label for="GRAFICA_FERNANDEZ">Grafica Ferrnadez</label>
+                <br>
+                <input type="checkbox" id="CENTRO_MEDICO_VICTORIANO" class="ubicacionCheckbox">
+                <label for="CENTRO_MEDICO_VICTORIANO">Centro Medico Victoriano</label>
+                <br>
+                <input type="checkbox" id="CONTROL_DE_PLAGAS" class="ubicacionCheckbox">
+                <label for="CONTROL_DE_PLAGAS">Control de plagas</label>
+                <br>
+                <input type="checkbox" id="MAIVA_ENVASES" class="ubicacionCheckbox">
+                <label for="MAIVA_ENVASES">Maiva Envases</label>
+                <br>
+                <input type="checkbox" id="WE_DENT" class="ubicacionCheckbox">
+                <label for="WE_DENT">WE DENT</label>
+                <br>
+                <input type="checkbox" id="KING_CY_BARBERSHOP" class="ubicacionCheckbox">
+                <label for="KING_CY_BARBERSHOP">King CY Barbershop</label>
+                <br>
+                <input type="checkbox" id="MADERAS_EL_CASTOR" class="ubicacionCheckbox">
+                <label for="MADERAS_EL_CASTOR">Madertas el Castor</label>
+                <br>
+            </div>
+            <h3 onclick="toggleContenido('ALIMENTOS')">Alimentos</h3>
+            <div id="ALIMENTOS" class="contenido">
+                <input type="checkbox" id="AQUI_ESTA_LA_PAPA" class="ubicacionCheckbox">
+                <label for="AQUI_ESTA_LA_PAPA">Aquí esta la papa</label>
+                <br>
+                <input type="checkbox" id="FRUTERIA_EL_EDEN" class="ubicacionCheckbox">
+                <label for="FRUTERIA_EL_EDEN">Fruteria el Eden</label>
+                <br>
+                <input type="checkbox" id="LA_GRAN_FERIA_ZUFRUTA_3_0" class="ubicacionCheckbox">
+                <label for="LA_GRAN_FERIA_ZUFRUTA_3_0">La gran feria zufruta 3.0</label>
+                <br>
+                <input type="checkbox" id="LAS_PAPAS_DE_MUERMO" class="ubicacionCheckbox">
+                <label for="LAS_PAPAS_DE_MUERMO">Las papas de Muermo</label>
+                <br>
+            </div>
+            <h3 onclick="toggleContenido('COMIDA_RAPIDA')">Comida Rapida</h3>
+            <div id="COMIDA_RAPIDA" class="contenido">
+                <input type="checkbox" id="TONNYS_KING" class="ubicacionCheckbox">
+                <label for="TONNYS_KING">Tonny´s King</label>
+                <br>
+                <input type="checkbox" id="COMPLETOS_CHARLES" class="ubicacionCheckbox">
+                <label for="COMPLETOS_CHARLES">Completos charles</label>
+                <br>
+                <input type="checkbox" id="EL_MASTICON" class="ubicacionCheckbox">
+                <label for="EL_MASTICON">El Masticon</label>
+                <br>
+                <input type="checkbox" id="TSUKI_FUSION" class="ubicacionCheckbox">
+                <label for="TSUKI_FUSION">Tsuki Fusion</label>
+                <br>
+                <input type="checkbox" id="ONDE_PANCHITO" class="ubicacionCheckbox">
+                <label for="ONDE_PANCHITO">Onde Panchito</label>
+            </div>
+            <h3 onclick="toggleContenido('MECANICOS')">MECANICOS</h3>
+            <div id="MECANICOS" class="contenido">
+                <input type="checkbox" id="MASCAR_RACING" class="ubicacionCheckbox">
+                <label for="MASCAR_RACING">Mascar Racing</label>
+                <br>
+                <input type="checkbox" id="MB_AUTOMOTRIZ" class="ubicacionCheckbox">
+                <label for="MB_AUTOMOTRIZ">MB Automotriz</label>
+                <br>
+                <input type="checkbox" id="AUTOMOTRIZ_RAMIREZ" class="ubicacionCheckbox">
+                <label for="AUTOMOTRIZ_RAMIREZ">Automotriz Ramirez</label>
+                <br>
+                <input type="checkbox" id="CAR_CLEAN" class="ubicacionCheckbox">
+                <label for="CAR_CLEAN">Car Clean</label>
+                <br>
+                <input type="checkbox" id="EDOW_TRIANGLE" class="ubicacionCheckbox">
+                <label for="EDOW_TRIANGLE">Edow Triangle</label>
+                <br>
+            </div>
+        </div>
+
+        <!-- MAPA -->
+        <div id="map"></div>
+    </div>
+
+
+</body>
+
+</html>
