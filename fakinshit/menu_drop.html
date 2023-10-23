@@ -6,21 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles2.css">
     <script src="scripts/deplegable.js" async></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <title>menu drop</title>
 </head>
 
 <body>
+   
     <span class="horizontal-list">
         <a href="http://liceoandresbellopm.cl/"><img src="images/IMAGENES_PAG/INSIGNIA_LICEO.png" alt width="40px"></a>
         <h1>Liceo Andres Bello</h1>
     </span>
+    
     <nav class="nav">
         <ul class="list">
             <li class="list__item list__item--click">
                 <div class="list__button list__button--click">
-                    <img src="images/IMAGENES_PAG/" class="list__img">
+                    <i class="bi bi-caret-right-fill"></i>
                     <a href="#" class="nav__link">Utilidades</a>
-                    <img src="images/IMAGENES_PAG/IMG_ARROW_DOWN.png" class="list__arrow" width="10px" height="10px">
+                    <i class="bi bi-arrow-down-left list__arrow"></i>
 
                 </div>
                 <ul class="list__show">
@@ -119,100 +124,69 @@
             </li>
             <li class="list__item list__item--click">
                 <div class="list__button list__button--click">
-                    <img src="images/IMAGENES_PAG/" class="list__img">
+                    <i class="bi bi-caret-right-fill"></i>
                     <a href="#" class="nav__link">Alimentos</a>
-                    <img src="" class="list__arrow" width="30px" height="30px">
+                    <i class="bi bi-arrow-down-left list__arrow"></i>
 
                 </div>
                 <ul class="list__show">
                     <li class="list__inside">
                         <a href="#" class="nav__link nav__link--inside">
-                            <input type="checkbox" id="VESET" class="ubicacionCheckbox">
-                            <label for="VESET">Veset</label>
+                            <input type="checkbox" id="AQUI_ESTA_LA_PAPA" class="ubicacionCheckbox">
+                            <label for="AQUI_ESTA_LA_PAPA">Aquí esta la papa</label>
                         </a>
                     </li>
                     <li class="list__inside">
                         <a href="#" class="nav__link nav__link--inside">
-                            <input type="checkbox" id="VIDRIERIA_CHAMIA" class="ubicacionCheckbox">
-                            <label for="VIDRIERIA_CHAMIA">Vidrieria Chamia</label>
+                            <input type="checkbox" id="FRUTERIA_EL_EDEN" class="ubicacionCheckbox">
+                            <label for="FRUTERIA_EL_EDEN">Fruterria el Eden</label>
                         </a>
                     </li>
                     <li class="list__inside">
                         <a href="#" class="nav__link nav__link--inside">
-                            <input type="checkbox" id="CYBER_HORNOPIREN" class="ubicacionCheckbox">
-                            <label for="CYBER_HORNOPIREN">Cyber Hornopiren</label>
+                            <input type="checkbox" id="LA_GRAN_FERIA_ZUFRUTA_3_0" class="ubicacionCheckbox">
+                            <label for="LA_GRAN_FERIA_ZUFRUTA_3_0"> La gran feria zufruta</label>
                         </a>
                     </li>
                     <li class="list__inside">
                         <a href="#" class="nav__link nav__link--inside">
-                            <input type="checkbox" id="FERRETERIA_RELONCAVI" class="ubicacionCheckbox">
-                            <label for="FERRETERIA_RELONCAVI">Ferreteria Reloncavi</label>
+                            <input type="checkbox" id="LAS_PAPAS_DE_MUERMO" class="ubicacionCheckbox">
+                            <label for="LAS_PAPAS_DE_MUERMO">Las papas de Muermo</label>
+                        </a>
+                    </li>
+                </ul>
+
+            </li>
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                    <i class="bi bi-caret-right-fill"></i>
+                    <a href="#" class="nav__link">Comida rapida</a>
+                    <i class="bi bi-arrow-down-left list__arrow"></i>
+
+                </div>
+                <ul class="list__show">
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">
+                            <input type="checkbox" id="AQUI_ESTA_LA_PAPA" class="ubicacionCheckbox">
+                            <label for="AQUI_ESTA_LA_PAPA">Aquí esta la papa</label>
                         </a>
                     </li>
                     <li class="list__inside">
                         <a href="#" class="nav__link nav__link--inside">
-                            <input type="checkbox" id="CENTRO_DE_BUCEO_ECOSUB" class="ubicacionCheckbox">
-                            <label for="CENTRO_DE_BUCEO_ECOSUB">Centro de buceo ECOSUB</label>
+                            <input type="checkbox" id="FRUTERIA_EL_EDEN" class="ubicacionCheckbox">
+                            <label for="FRUTERIA_EL_EDEN">Fruterria el Eden</label>
                         </a>
                     </li>
                     <li class="list__inside">
                         <a href="#" class="nav__link nav__link--inside">
-                            <input type="checkbox" id="SOLMEC" class="ubicacionCheckbox">
-                            <label for="SOLMEC">SOLMEC</label>
+                            <input type="checkbox" id="LA_GRAN_FERIA_ZUFRUTA_3_0" class="ubicacionCheckbox">
+                            <label for="LA_GRAN_FERIA_ZUFRUTA_3_0"> La gran feria zufruta</label>
                         </a>
                     </li>
                     <li class="list__inside">
                         <a href="#" class="nav__link nav__link--inside">
-                            <input type="checkbox" id="WOM" class="ubicacionCheckbox">
-                            <label for="WOM">WOM</label>
-                        </a>
-                    </li>
-                    <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside">
-                            <input type="checkbox" id="CANNAHUE_HOJALATERIA" class="ubicacionCheckbox">
-                            <label for="CANNAHUE_HOJALATERIA">Cannahue Hojalateria</label>
-                        </a>
-                    </li>
-                    <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside">
-                            <input type="checkbox" id="GRAFICA_FERNANDEZ" class="ubicacionCheckbox">
-                            <label for="GRAFICA_FERNANDEZ">Grafica Fernandez</label>
-                        </a>
-                    </li>
-                    <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside">
-                            <input type="checkbox" id="CENTRO_MEDICO_VICTORIANO" class="ubicacionCheckbox">
-                            <label for="CENTRO_MEDICO_VICTORIANO">Centro Medico Victoriano</label>
-                        </a>
-                    </li>
-                    <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside">
-                            <input type="checkbox" id="CONTROL_DE_PLAGAS" class="ubicacionCheckbox">
-                            <label for="CONTROL_DE_PLAGAS">Control de plagas</label>
-                        </a>
-                    </li>
-                    <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside">
-                            <input type="checkbox" id="MAIVA_ENVASES" class="ubicacionCheckbox">
-                            <label for="MAIVA_ENVASES">Maiva Envases</label>
-                        </a>
-                    </li>
-                    <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside">
-                            <input type="checkbox" id="WE_DENT" class="ubicacionCheckbox">
-                            <label for="WE_DENT">WE Dent</label>
-                        </a>
-                    </li>
-                    <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside">
-                            <input type="checkbox" id="KING_CY_BARBERSHOP" class="ubicacionCheckbox">
-                            <label for="KING_CY_BARBERSHOP">King CY Barrbershop</label>
-                        </a>
-                    </li>
-                    <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside">
-                            <input type="checkbox" id="MADERAS_EL_CASTOR" class="ubicacionCheckbox">
-                            <label for="MADERAS_EL_CASTOR">Maderas el castor</label>
+                            <input type="checkbox" id="LAS_PAPAS_DE_MUERMO" class="ubicacionCheckbox">
+                            <label for="LAS_PAPAS_DE_MUERMO">Las papas de Muermo</label>
                         </a>
                     </li>
                 </ul>
@@ -220,6 +194,7 @@
             </li>
         </ul>
     </nav>
+    <div id="map"></div>
 </body>
 
 </html>

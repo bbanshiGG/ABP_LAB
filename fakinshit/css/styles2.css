@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,300&family=Poppins:wght@100;200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;1,500&display=swap');
 
 * {
     margin: 0;
@@ -14,6 +14,7 @@ body {
 }
 
 span.horizontal-list {
+    
     display: block;
     background-color: #f8f9fa;
     display: flex;
@@ -49,6 +50,8 @@ span.horizontal-list img {
 }
 
 .list {
+    font-family: 'Exo 2', sans-serif;
+    font-size: large;
     width: 100%;
     height: 100%;
     display: flex;
@@ -77,12 +80,13 @@ span.horizontal-list img {
 }
 
 .arrow .list__arrow {
-    transform: rotate(90deg);
+    transform: rotate(180deg);
+    transition: .9s;
 }
 
 .list__arrow {
     margin-left: auto;
-    transition: transform .3s;
+    transition: transform .9s;
 }
 
 .list__show {
@@ -91,6 +95,13 @@ span.horizontal-list img {
     margin-left: auto;
     border-left: 2px solid #303440;
     list-style: none;
-    transition: height .4s;
+    transition: height .9s;
     height: 0;
+}
+
+#map{
+
+    height: 850px; 
+    width: 850px;
+    border: 1px solid #0d6efd;
 }
