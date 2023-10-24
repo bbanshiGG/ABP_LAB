@@ -105,9 +105,6 @@ var locations = [
         lat: -41.46178175495399,
         lng: -72.94890643475354,
     },
-    
-    
-   
     // Venta de utilidades variados
     { 
         id: 'VESET',
@@ -240,8 +237,6 @@ var locations = [
         lat: null,
         lng: null,
     },
-    
-
     //Servicios de ayuda Sanitaria o Trabajos privados
     {
         id: 'CONTROL_DE_PLAGAS',
@@ -259,8 +254,6 @@ var locations = [
         lat: -41.461680247810115,
         lng: -72.94881523964628,
     },
-    
-
     // Locales Alimenos
     { 
         id: 'AQUI_ESTA_LA_PAPA',
@@ -376,7 +369,7 @@ var locations = [
         lng: -72.9522994,
     },
     {   
-        id: 'TSUKI_FUSION ',
+        id: 'TSUKI_FUSION',
         name: 'Tsuki Fusion',
         image: "images/TSUKI_FUSION/IMG_TSUKI_FUSION_001.jpeg",
         info: {
@@ -505,39 +498,13 @@ locations.forEach(function(location) {
   var marker = L.marker([location.lat, location.lng]);
 
   /*
-    
-
-    */
-
-  var popupContent = `
-    <img src="${location.image}" alt="Imagen de ${
-    location.name
-  }" height="240" width="240" style="display: flex; padding: 10px;">
-    <table border="1">
+  height="240" width="240" style="display: flex; padding: 10px;"
+      <table>
         <caption>
             <span class="popupTitle">${location.name}</span>
         </caption>
         <tbody>
-        ${
-          location.info.telefono
-            ? `
-            <tr>
-                <th scope="row">Telefono de Contacto</th>
-                <td>${location.info.telefono}</td>
-            </tr>
-            `
-            : ``
-        } 
-        ${
-          location.info.email
-            ? `
-            <tr>
-                <th scope="row">E-Mail</th>
-                <td>${location.info.email}</td>
-            </tr>
-            `
-            : ``
-        }
+
         ${
           location.info.direccion
             ? `
@@ -553,7 +520,7 @@ locations.forEach(function(location) {
             ? `
             <tr>
                 <th scope="row">Website</th>
-                <td><a href="https://${location.info.website}" target="_blank">${location.info.website}</a></td>
+                <td><a href="https://${location.info.website}" target="_blank">${location.info.name}</a></td>
             </tr>
             `
             : ``
@@ -571,8 +538,61 @@ locations.forEach(function(location) {
         } 
       </tbody>
     </table>
-    `;
-  marker.bindPopup(popupContent, { className: "popUp" });
+    <img src="${location.image}" alt="Imagen de ${
+    location.name
+   }" style="width: auto; height: 200px;">
+  */
+  var popupContent = `
+  <div>
+  <div class="mt-4 border-t border-yellow-100">
+    <dl class="divide-y divide-blue-100">
+      <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+        <dt class="text-sm font-medium leading-6 text-gray-900 font-['Exo 2']">Nombre</dt>
+        <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">${location.name}</dd>
+      </div>
+      ${
+        location.info.email ? 
+        `
+        <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+          <dt class="text-sm font-medium leading-6 text-gray-900 font-['Exo 2']">Email</dt>
+            <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">${location.info.email}</dd>
+        </div>
+      ` : ``
+      }
+      ${
+        location.info.telefono ? 
+        `
+        <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+          <dt class="text-sm font-medium leading-6 text-gray-900 font-['Exo 2']">Telefono</dt>
+            <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">${location.info.telefono}</dd>
+        </div>
+      ` : ``
+      }
+      ${
+        location.info.website ? 
+        `
+        <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+          <dt class="text-sm font-medium leading-6 text-gray-900 font-['Exo 2']">Sitio web</dt>
+            <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0"><a href="https://${location.info.website}" target="_blank">${location.name}</a></dd>
+        </div>
+      ` : ``
+      }
+      ${
+        location.info.direccion ? 
+        `
+        <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+          <dt class="text-sm font-medium leading-6 text-gray-900 font-['Exo 2']">Dirección</dt>
+            <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">${location.info.direccion}</dd>
+        </div>
+      ` : ``
+      }
+      <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+        <dt class="text-sm font-medium leading-6 text-gray-900">Descripción</dt>
+        <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">${location.info.descripcion}</dd>
+      </div>
+    </dl>
+  </div>`;
+  marker.bindPopup(popupContent, { minWidth: "640" });
   markers[location.id] = marker;
 });
 
