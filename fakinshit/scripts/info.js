@@ -499,80 +499,81 @@ var markers = {};
 // });
 
 locations.forEach(function(location) {
-    var marker = L.marker([location.lat, location.lng]);
-    var popupContent = `
-    <img src="${location.image}" alt="Imagen de ${location.name}" height="240" width="240" style="display: flex; padding: 10px;">
+  // Si la localizacion no tiene logitud ni latitud no la muestra en el mapa :D
+  if (location.lat && location.lng == null) return;
+
+  var marker = L.marker([location.lat, location.lng]);
+
+  /*
+    
+
+    */
+
+  var popupContent = `
+    <img src="${location.image}" alt="Imagen de ${
+    location.name
+  }" height="240" width="240" style="display: flex; padding: 10px;">
     <table border="1">
         <caption>
-            <b>${location.name}</b>
+            <span class="popupTitle">${location.name}</span>
         </caption>
         <tbody>
         ${
-            location.info.telefono 
-            ?
-            `
+          location.info.telefono
+            ? `
             <tr>
                 <th scope="row">Telefono de Contacto</th>
                 <td>${location.info.telefono}</td>
             </tr>
             `
-            :
-            ``
+            : ``
         } 
         ${
-            location.info.email 
-            ? 
-            `
+          location.info.email
+            ? `
             <tr>
                 <th scope="row">E-Mail</th>
                 <td>${location.info.email}</td>
             </tr>
             `
-            : 
-            ``
+            : ``
         }
         ${
-            location.info.direccion 
-            ?
-            `
+          location.info.direccion
+            ? `
             <tr>
                 <th scope="row">Dirección</th>
                 <td>${location.info.direccion}</td>
             </tr>
             `
-            :
-            ``
+            : ``
         } 
         ${
-            location.info.website 
-            ?
-            `
+          location.info.website
+            ? `
             <tr>
                 <th scope="row">Website</th>
                 <td><a href="https://${location.info.website}" target="_blank">${location.info.website}</a></td>
             </tr>
             `
-            :
-            ``
+            : ``
         } 
         ${
-            location.info.horarios 
-            ?
-            `
+          location.info.horarios
+            ? `
             <tr>
                 <th scope="row">Horarios</th>
                 <td>${location.info.horarios}</td>
 
             </tr>
             `
-            :
-            ``
+            : ``
         } 
       </tbody>
     </table>
-    `
-    marker.bindPopup(popupContent);
-    markers[location.id] = marker;
+    `;
+  marker.bindPopup(popupContent, { className: "popUp" });
+  markers[location.id] = marker;
 });
 
 // Función para mostrar u ocultar marcadores según las selecciones de los checkboxes
