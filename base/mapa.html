@@ -1,6 +1,8 @@
+<!--Empezamos seleccionando el tipo de lenguaje de progrmacion-->
 <!DOCTYPE html>
+<!--Escogemos el idioma que tendra nuestra pagina-->
 <html lang="es-CL">
-
+<!--Dentro de head, que es donde reside la informacion acerca de nuestro documentoi HTML-->
 <head>
     <title>LICEO ANDRÉS BELLO | MAPA</title>
     <meta charset="UTF-8">
@@ -9,21 +11,28 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="scripts/main.js" async></script>
 </head>
-
+<!--comenzando con la siguiente parte del codigo usareos body para
+comenzar a programar las partes que conformaran nuestra pagina-->
 <body>
     <span class="horizontal-list">
         <a href="http://liceoandresbellopm.cl/"><img src="images/IMAGENES_PAG/INSIGNIA_LICEO.png" alt width="40px"></a>
         <h1>Liceo Andres Bello</h1>
     </span>
-
+<!--Dentro de esta primera parte con el <a href=, pondremos un link dentro del logo de nuestro liceo
+pra el momento de presionar la pagina que nos envie directamente a la pagina oficial del liceo -->
     <div class="wrapper">
 
 
         <!-- CONTENEDOR DE SELECTORES -->
         <div class="wrapper_item grupo-desplegable">
 
-            <!-- PRIMER TIPO DE LOCALIZACION -->
-            <h3 onclick="toggleContenido('UTILIDADES')">Utilidades</h3>
+            
+            <!-- Aqui comenzamos con toda la parte en la cual van a ser contenidas nuestras localizaciones
+                 e informaciones de los diferentes locales a los cuales visitamos, cada local esta dentro de
+                  su respectivo tipo, ordenandolas de manera que pueda guiar y falicitar el trabajop de la gente que visita nuestra pagina -->
+            
+            <!--Primero creamos la primera tabla donde iran algunos de los diferentes locales--> 
+                  <h3 onclick="toggleContenido('UTILIDADES')">Utilidades</h3>
             <div id="UTILIDADES" class="contenido">
                 <input type="checkbox" id="VESET" class="ubicacionCheckbox">
                 <label for="VESET">Veset</label>
