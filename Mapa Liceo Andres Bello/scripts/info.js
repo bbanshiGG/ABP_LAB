@@ -1,11 +1,11 @@
-var map = L.map('map').setView([-41.4598748,-72.9510897,282], 15);
+var map = L.map('map').setView([-41.4598748, -72.9510897, 282], 15);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
 var locations = [
-    
-    
+
+
     //Centros de salud/Cuidado Personal
     {
         id: 'CENTRO_MEDICO_VICTORIANO',
@@ -46,7 +46,7 @@ var locations = [
         info: {
             direccion: "Avenida Parque Industrial 481",
             telefono: "+56 9 3517 1320",
-            email:'contacto@convenioswedent.cl',
+            email: 'contacto@convenioswedent.cl',
             website: 'https://convenioswedent.cl/',
             descripcion: "Local de servicios de odontología.",
             horarios: 'horario de mañana:(lunes a viernes) 09:00 a.m A 13:00 p.m, Horario de tarde: (lunes a viernes) 14:00 p.m A 19:00 p.m ',
@@ -55,7 +55,7 @@ var locations = [
         lat: -41.46044470368143,
         lng: -72.9538604755147,
     },
-    { 
+    {
         id: 'KING_CY_BARBERSHOP',
         name: 'King CY BARBERSHOP',
         image: "images/KING_CY_BARBERSHOP/IMG_KING_CY_BARBERSHOP_001.JPG",
@@ -68,12 +68,12 @@ var locations = [
             horarios: "10:30 AM a 20:00 PM todos los dias",
             propietario: null
         },
-        lat:  -41.46140738281738,
-        lng:  -72.94875419540126,
+        lat: -41.46140738281738,
+        lng: -72.94875419540126,
     },
 
     //Locales centrados en la tecnologia
-    { 
+    {
         id: 'CYBER_HORNOPIREN',
         name: 'Cyber Hornopiren',
         image: "images/CYBER_HORNOPIREN/IMG_CYBER_HORNOPIREN_002.JPEG",
@@ -89,7 +89,7 @@ var locations = [
         lat: -41.46086348691203,
         lng: -72.9483535720955,
     },
-    { 
+    {
         id: 'WOM',
         name: 'WOM',
         image: "images/WOM/IMG_WOM_002.jpeg",
@@ -99,10 +99,10 @@ var locations = [
             email: null,
             website: "https://www.wom.cl/",
             descripcion: "Conexiones inalámbricas y telecomunicaciones.",
-            horarios: "(lunes a viernes) 10 a.m A 19:00 pm, (sabado) 10 am A 14:00 pm",
+            horarios: "<span class='underline decoration-indigo-500 font-bold'>Lunes a Viernes de:</span><br>10:00 AM a 19:00 PM<br><span class='underline decoration-indigo-500 font-bold'>Sabado de:</span><br>10:00 AM a 14:00 PM.<br><span class='underline decoration-indigo-500 font-bold'>Domingo:</span><br><span class='font-bold'>CERRADO.</span>",
             propietario: null
         },
-        lat: -41.45989125579157, 
+        lat: -41.45989125579157,
         lng: -72.95373191222319,
     },
     {
@@ -115,14 +115,14 @@ var locations = [
             email: null,
             website: "https://www.cylex.cl/puerto-montt/gr%c3%a1fica-fern%c3%a1ndez-11295340.html",
             descripcion: "Sitio dedicado a la publicidad.",
-            horarios: "Lunes A Viernes 09:00 A.M a 13:00 P.M, Horaria Tarde de Lunes A Viernes : 15:OO P.M a 18:30 P.M",
+            horarios: "<span class='underline decoration-indigo-500 font-bold'>Lunes a Viernes de:</span><br>9:00 AM a 13:00 PM<br>15:00 PM a 18:30 PM.<br><span class='underline decoration-indigo-500 font-bold'>Sabado y Domingo:</span><br><span class='font-bold'>CERRADO.</span>",
             propietario: null
         },
         lat: -41.46178175495399,
         lng: -72.94890643475354,
     },
     // Venta de utilidades variados
-    { 
+    {
         id: 'VESET',
         name: 'VESET',
         image: "images/VESET/IMG_VESET_001.jpeg",
@@ -135,10 +135,10 @@ var locations = [
             horarios: "<span class='underline decoration-indigo-500 font-bold'>Lunes a jueves de:</span><br>8:30 AM a 13:45 PM<br>14:00 PM a 18:45 PM.<br><span class='underline decoration-indigo-500 font-bold'>Viernes de:</span><br>8:30 AM a 13:45 PM.<br><span class='underline decoration-indigo-500 font-bold'>Sabado y domingo:</span><br><span class='font-bold'>CERRADO.</span>",
             propietario: null
         },
-        lat: -41.46001804998867, 
+        lat: -41.46001804998867,
         lng: -72.94811153550964,
     },
-    { 
+    {
         id: 'VIDRIERIA_CHAMIA',
         name: 'Vidrieria Chamia',
         image: "images/VIDRIERIA_CHAMIA/IMG_VIDRIERIA_CHAMIA_001.JPG",
@@ -154,8 +154,8 @@ var locations = [
         lat: -41.45978144673535,
         lng: -72.9479702329055,
     },
-   
-    { 
+
+    {
         id: 'CENTRO_DE_BUCEO_ECOSUB',
         name: 'Centro De Buceo Ecosub',
         image: "images/CENTRO_DE_BUCEO_ECOSUB/IMG_CENTRO_DE_BUCEO_ECOSUB_001.jpeg",
@@ -171,7 +171,7 @@ var locations = [
         lat: -41.45759,
         lng: -72.95415,
     },
-    { 
+    {
         id: 'MAIVA_ENVASES',
         name: 'Maiva Envases',
         image: "images/MAIVA_ENVASES/IMG_MAIVA_ENVASES_002.jpeg",
@@ -187,14 +187,14 @@ var locations = [
         lat: -41.4611044,
         lng: -72.9487533,
     },
-    {   
+    {
         id: 'MADERAS_EL_CASTOR',
         name: 'Maderas el castor',
         image: "images/MADERAS_EL_CASTOR/IMG_MADERAS_EL_CASTOR_001.jpeg",
         info: {
             direccion: "Avenida Parque Industrial 475",
             telefono: "+56 9 7988 4354",
-            email:  null,
+            email: null,
             website: " http://www.elcastor.cl/",
             descripcion: "Venta de  maderas (Pino Oregón, Pino Insigne y Maderas Nativas en Puerto Montt).",
             horarios: "(lunes a domingo) 8:30 a.m A 18:00 p.m, ",
@@ -204,7 +204,7 @@ var locations = [
         lng: -72.9530957115375,
     },
     //Ferreterias 
-    { 
+    {
         id: 'SOLMEC',
         name: 'Solmec',
         image: "images/SOLMEC/IMG_SOLMEC_001.jpeg",
@@ -220,7 +220,7 @@ var locations = [
         lat: -41.46074799173023,
         lng: -72.94838567147605,
     },
-    { 
+    {
         id: 'FERRETERIA_RELONCAVI',
         name: 'Ferreteria Reloncavi',
         image: "images/FERRETERIA_RELONCAVI/IMG_FERRETERIA_RELONCAVI_001.JPEG",
@@ -236,7 +236,7 @@ var locations = [
         lat: -41.46114040581125,
         lng: -72.95001703065795,
     },
-    
+
     {
         id: 'CANNAHUE_HOJALATERIA',
         name: 'cannahuen hojalateria',
@@ -261,7 +261,7 @@ var locations = [
         info: {
             direccion: null,
             telefono: "652255131",
-            email:'jefeoperaciones@esamltda.cl',
+            email: 'jefeoperaciones@esamltda.cl',
             website: 'https://www.esamltda.cl/',
             descripcion: "Empresa dedicada al orden ambiental.",
             horarios: '08:15 A.M a 13:00 P.M(lunes a viernes(Mañana)),13:30 P.M hasta las 18:00 P.M(lunes a viernes(tarde))',
@@ -271,7 +271,7 @@ var locations = [
         lng: -72.94881523964628,
     },
     // Locales Alimenos
-    { 
+    {
         id: 'AQUI_ESTA_LA_PAPA',
         name: 'Aquí esta la papa',
         image: "images/AQUI_ESTA_LA_PAPA/IMG_AQUI_ESTA_LA_PAPA_001.JPG",
@@ -287,7 +287,7 @@ var locations = [
         lat: -41.461005372851375,
         lng: -72.95064558496847,
     },
-    { 
+    {
         id: 'FRUTERIA_EL_EDEN',
         name: 'Fruteria El Eden',
         image: "images/FRUTERIA_EL_EDEN/IMG_FRUTERIA_EL_EDEN_001.jpeg",
@@ -303,7 +303,7 @@ var locations = [
         lat: -41.46098602835041,
         lng: -72.9512317605798,
     },
-    { 
+    {
         id: 'LA_GRAN_FERIA_ZUFRUTA_3_0',
         name: 'La Gran feria Zufruta 3.0',
         image: "images/LA_GRAN_FERIA_ZUFRUTA/IMG_LA_GRAN_FERIA_ZUFRUTA_001.jpeg",
@@ -319,7 +319,7 @@ var locations = [
         lat: -41.46017978717117,
         lng: -72.94812122582864,
     },
-    {   
+    {
         id: 'LAS_PAPAS_DE_MUERMO',
         name: 'Las papas de muermo',
         image: "images/LAS_PAPAS_DE_MUERMO/IMG_LAS_PAPAS_DE_MUERMO_001.jpeg",
@@ -336,7 +336,7 @@ var locations = [
         lng: -72.9493075,
     },
     // Restaurantes/Comidas
-    { 
+    {
         id: 'TONNYS_KING',
         name: 'Tonny´s King',
         image: "images/TONNYS_KING/IMG_TONNYS_KING_005.jpeg",
@@ -368,7 +368,7 @@ var locations = [
         lat: -41.46098653922191,
         lng: -72.94794819983693,
     },
-    { 
+    {
         id: 'EL_MASTICON',
         name: 'El masticon',
         image: "images/EL_MASTICON/IMG_EL_MASTICON_001.jpeg",
@@ -384,23 +384,23 @@ var locations = [
         lat: -41.4612624,
         lng: -72.9522994,
     },
-    {   
+    {
         id: 'TSUKI_FUSION',
         name: 'Tsuki Fusion',
         image: "images/TSUKI_FUSION/IMG_TSUKI_FUSION_001.jpeg",
         info: {
             direccion: "Magallanes 698",
             telefono: "98656792",
-            email:  'Tsukifusion@gmail.com',
+            email: 'Tsukifusion@gmail.com',
             website: ' https://tsukifusion.webnode.cl/',
             descripcion: "Sitio de Comida China.",
             horarios: 'De las 11:00 a las 21:00',
             propietario: 'Jenifer Degens'
         },
-        lat: -41.46084437588396, 
+        lat: -41.46084437588396,
         lng: -72.95156065359845,
     },
-    {   
+    {
         id: 'ONDE_PANCHITO',
         name: 'Onde Panchito',
         image: "images/ONDE_PANCHITO/IMG_ONDE_PANCHITO_001.jpeg",
@@ -417,7 +417,7 @@ var locations = [
         lng: -72.94992050582246,
     },
     // Locales Mecanicos
-    { 
+    {
         id: 'MASCAR_RACING',
         name: 'Mascar Racing',
         image: "images/MASCAR_RACING/IMG_MASCAR_RACING_001.jpeg",
@@ -472,7 +472,7 @@ var locations = [
         info: {
             direccion: "avenida parque industrial 400",
             telefono: "+56 9 5010 8340",
-            email:  'carclean57@gmail.com',
+            email: 'carclean57@gmail.com',
             website: null,
             descripcion: "Ofrecen servicio de lavado de autos.",
             horarios: null,
@@ -481,7 +481,7 @@ var locations = [
         lat: -41.45976710661611,
         lng: -72.94867002091637,
     },
-    { 
+    {
         id: 'EDOW_TRIANGLE',
         name: 'Edow Triangle',
         image: "images/EDOW_TRIANGLE/IMG_EDOW_TRIANGLE_001.jpeg",
@@ -507,91 +507,84 @@ var markers = {};
 //     markers[location.id] = marker;
 // });
 
-locations.forEach(function(location) {
-  // Si la localizacion no tiene logitud ni latitud no la muestra en el mapa :D
-  if (location.lat && location.lng == null) return;
+locations.forEach(function (location) {
+    // Si la localizacion no tiene logitud ni latitud no la muestra en el mapa :D
+    if (location.lat && location.lng == null) return;
 
-  var marker = L.marker([location.lat, location.lng]);
-  var popupContent = `
+    var marker = L.marker([location.lat, location.lng]);
+    var popupContent = `
   <div class="flex flex-row gap-4">
   <div class="flex-initial w-72 mt-4 border-t border-yellow-100">
     <dl class="divide-y divide-blue-100">
       <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-        <dt class="text-sm font-medium leading-6 text-gray-900 font-['Exo 2', sans-serif]">Nombre</dt>
+        <dt class="text-sm font-medium leading-6 text-gray-900 font-['Exo 2']">Nombre</dt>
         <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">${location.name}</dd>
       </div>
-      ${
-        location.info.email ? 
-        `
+      ${location.info.email ?
+            `
         <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
           <dt class="text-sm font-medium leading-6 text-gray-900 font-['Exo 2']">Email</dt>
           <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0"><a href="mailto:${location.info.email}">${location.info.email}</a></dd>
           </div>
       ` : ``
-      }
-      ${
-        location.info.telefono ? 
-        `
+        }
+      ${location.info.telefono ?
+            `
         <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
           <dt class="text-sm font-medium leading-6 text-gray-900 font-['Exo 2']">Telefono</dt>
             <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0"><a href="tel:${location.info.telefono}">${location.info.telefono}</a></dd>
         </div>
       ` : ``
-      }
-      ${
-        location.info.website ? 
-        `
+        }
+      ${location.info.website ?
+            `
         <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
           <dt class="text-sm font-medium leading-6 text-gray-900 font-['Exo 2']">Sitio web</dt>
           <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0"><a href="https://${location.info.website}" target="_blank">${location.name}</a></dd>
         </div>
       ` : ``
-      }
-      ${
-        location.info.direccion ? 
-        `
+        }
+      ${location.info.direccion ?
+            `
         <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
           <dt class="text-sm font-medium leading-6 text-gray-900 font-['Exo 2']">Dirección</dt>
           <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">${location.info.direccion}</dd>
         </div>
       ` : ``
-      }
-      ${
-        location.info.descripcion ?
-        `
+        }
+      ${location.info.descripcion ?
+            `
         <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
             <dt class="text-sm font-medium leading-6 text-gray-900">Descripción</dt>
             <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">${location.info.descripcion}</dd>
         </div>
         ` : ``
-      }
-      ${
-        location.info.horarios ? 
-        `
+        }
+      ${location.info.horarios ?
+            `
         <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
           <dt class="text-sm font-medium leading-6 text-gray-900 font-['Exo 2']">Horarios</dt>
           <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">${location.info.horarios}</dd>
         </div>
       ` : ``
-      }
+        }
     </dl>
     </div>
-    ${
-        location.image ? 
-        `
-        <img src="${location.image}" alt="Imagen de ${location.name}" class="flex-1 w-36 h-auto">
+    ${location.image ?
+            `
+        <img src="${location.image}" alt="Imagen de ${location.name}" class="flex-1 w-36 h-auto rounded">
         ` : ``
-    }
+        }
   </div>`;
-  marker.bindPopup(popupContent, { minWidth: "640" });
-  markers[location.id] = marker;
+    marker.bindPopup(popupContent, { minWidth: "640" });
+    markers[location.id] = marker;
 });
 
 // Función para mostrar u ocultar marcadores según las selecciones de los checkboxes
 function actualizarMarcadores() {
     var checkboxes = document.querySelectorAll('.ubicacionCheckbox');
-    
-    checkboxes.forEach(function(checkbox) {
+
+    checkboxes.forEach(function (checkbox) {
         var id = checkbox.id;
         if (checkbox.checked) {
             markers[id].addTo(map);
@@ -601,7 +594,7 @@ function actualizarMarcadores() {
     });
 }
 // Escuchar el evento de cambio en los checkboxes
-document.querySelectorAll('.ubicacionCheckbox').forEach(function(checkbox) {
+document.querySelectorAll('.ubicacionCheckbox').forEach(function (checkbox) {
     checkbox.addEventListener('change', actualizarMarcadores);
 });
 
