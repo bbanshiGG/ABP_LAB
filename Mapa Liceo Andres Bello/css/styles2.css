@@ -4,13 +4,10 @@
     padding: 0;
     border: 0;
 } 
-
 body {
-
     background-color: #e4e4e4;
     font-family: 'Poppins', sans-serif;
 }
-
 i{
     color: #0d6efd;
 }
@@ -25,8 +22,7 @@ span.horizontal-list {
     padding-bottom: 15px;
     padding-left: 50px;
     font-size: 20px;
-    box-shadow: 0 1px 3px 0 rgba(255, 255, 0, 0.1), 0 1px 2px -1px rgb(255 255 0 / 0.1);
-    
+    box-shadow: 0 1px 3px 0 rgba(255, 255, 0, 0.1), 0 1px 2px -1px rgb(255 255 0 / 0.1);  
 }
 span.horizontal-list img {
     margin-right: 7px;
@@ -37,7 +33,6 @@ span.horizontal-list h1{
 .nav {
     width: 300px;
 }
-
 .nav__link {
     color: #303440;
     display: block;
@@ -112,16 +107,31 @@ span.horizontal-list h1{
 
 #map {  
     z-index: 1;
-    height: 850px; 
-    width: 90%;
-    /* border: 1px solid #0d6efd; */
+    position: relative ;
+    width: 100% ;
+    border: 1px solid #0d6efd;
+}
+#map > *{
+    display: block ;
+    position: absolute ;
+    top: 0 ;
+    right: 0 ;
+    bottom: 0 ;
+    left: 0 ;
+    margin: 0 ;
+    padding: 0 ;
+    height: 100% ;
+    width: 100% ;
 }
 .footer__style{
-    display: flex;
-    justify-content: space-between!important;
     background-color: #f8f9fa;
-    bottom: 0;
-}
-/* .footer__style --style__div{
+    display: flex;
+    flex-direction: row ;
+}  
 
-} */
+.footer__style--text{
+    text-align: center;
+}
+.footer__style--redes__sociales{
+    text-align: end;
+}
