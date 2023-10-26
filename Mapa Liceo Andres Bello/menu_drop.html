@@ -1,25 +1,37 @@
 <!DOCTYPE html>
-<html lang="es-CL">
 
+<html lang="es-CL">
+<!--especifica que el lenguaje de la página es español de Chile -->
 <head>
+<!--Comienza la sección de encabezado de la página-->
     <meta charset="UTF-8">
+<!--Define la codificación de caracteres utilizada en la página como UTF-8-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Esta etiqueta meta configura la escala inicial y el ancho del dispositivo-->
+
     <link rel="stylesheet" href="css/styles2.css">
+<!--Enlaza la hoja de estilos "styles2.css" para dar estilo a la página-->
     <script src="scripts/info.js" async></script>
+<!--Enlaza un archivo JavaScript "info.js" con la propiedad async-->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="web icon" href="images/IMAGENES_PAG/INSIGNIA_LICEO.png">
     <title>Liceo Andrés Bello</title>
+
 </head>
+<!--se cierra el encabezado de la pagina, normalmente esta informacion dentro de esta, no se puede apreciar visualmente-->
 
 <body>
     <span class="horizontal-list">
+<!--crea una clase de tipo horizontal-->
         <a href="http://liceoandresbellopm.cl/"><img src="images/IMAGENES_PAG/INSIGNIA_LICEO.png" alt width="35px" height="28.18px"></a>
+        <!--dentro de una imagen en este caso el logo del liceo, se inserta un link, que al presionar te abre directamente la pagina-->
         <h1>Liceo Andrés Bello</h1>
     </span>
     <div class="wrapper">
+    <!--Se crea un contenedor con la clase "wrapper" que rodea el contenido principal de la página-->
         <nav class="nav">
             <ul class="list">
                 <li class="list__item list__item--click">
@@ -29,6 +41,8 @@
                         <i class="bi bi-arrow-down-left list__arrow"></i>
                     </div>
                     <ul class="list__show">
+                    <!--Dentro de cada elemento de lista 'li'
+                    se crea otra lista desordenada para mostrar elementos secundarios-->
                         <li class="list__inside">
                             <a href="#" class="nav__link nav__link--inside">
                                 <input type="checkbox" id="CENTRO_MEDICO_VICTORIANO" class="ubicacionCheckbox">
@@ -263,8 +277,12 @@
             </ul>
         </nav>
         <div id="map"></div>
+        <!--Se crea un div con el ID "map" que utilizamos para mostrar el mapa de la página.-->
     </div>
     <footer class="footer__style">
+     <!--Define la sección de pie de página de la página.-->
+
+
         <div>
             <span class="footer__style footer__style--text">
                 <img src="images/IMAGENES_PAG/INSIGNIA_LICEO.png" width="25">
