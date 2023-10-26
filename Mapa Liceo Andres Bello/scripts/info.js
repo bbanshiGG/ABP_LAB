@@ -1,9 +1,12 @@
 var map = L.map('map').setView([-41.4598748, -72.9510897, 282], 15);
+// Se crea un mapa Leaflet con una vista inicial en las coordenadas especificadas.
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
+// Se agrega una capa de azulejos (tiles) de OpenStreetMap al mapa
 
 var locations = [
+// Lista de ubicaciones con detalles, incluyendo nombre, imagen, información, coordenadas, etc.
 
 
     //Centros de salud/Cuidado Personal
@@ -17,7 +20,11 @@ var locations = [
             email: null,
             website: "https://agendamiento.reservo.cl/makereserva/agenda/X0FMr8y0T0ycsv5T4153r7Z6q6l5C6?fbclid=PAAaZ8EwbUj4-JeC1Fp2Mo7afzAM0rb9A5V5hk6RXlv50YUYctyRzOQpeOnH4",
             descripcion: "Centro medico de nutrición, ginecología, etc.",
-            horarios: "<span class='underline decoration-indigo-500 font-bold'>Lunes a Viernes:</span><br>10:00 A.M a 19:00 P.M<br><span class='underline decoration-indigo-500 font-bold'>Sabado y Domingo:</span><br><span class='font-bold'>CERRADO.</span>",
+            horarios: `<span class='underline decoration-indigo-500 font-bold'>Lunes a Viernes:</span><br>10:00 A.M a 19:00 P.M<br><span class='font-bold'>${estaAbierto(10, 19) ? "ABIERTO" : "CERRADO"}</span><br><span class='underline decoration-indigo-500 font-bold'>Sabado y Domingo:</span> <span class='font-bold'>CERRADO</span>`,
+            horaInicio: '10',
+            minutosInicio: null,
+            horaTermino: '19',
+            minutosTermino: null,
             propietario: null
         },
         lat: -41.460576623978795,
@@ -500,85 +507,82 @@ var locations = [
 ];
 
 var markers = {};
-
-// locations.forEach(function(location) {
-//     var marker = L.marker([location.lat, location.lng]);
-//     marker.bindPopup(location.name);
-//     markers[location.id] = marker;
-// });
+// Se crea un objeto vacío para almacenar marcadores.
 
 locations.forEach(function (location) {
-    // Si la localizacion no tiene logitud ni latitud no la muestra en el mapa :D
+    // Para cada ubicación en la lista, se crea un marcador y se define su contenido emergente (o popup).
     if (location.lat && location.lng == null) return;
+    // Si la ubicación no tiene coordenadas válidas, se omite y no se muestra en el mapa.
 
+   // Se crea un marcador en las coordenadas de la ubicación.
     var marker = L.marker([location.lat, location.lng]);
+    
+    // Se construye el contenido emergente (popup) con detalles de la ubicación.
     var popupContent = `
   <div class="flex flex-row gap-4">
   <div class="flex-initial w-72 mt-4 border-t border-yellow-100">
+    <div class="px-4 sm:px-0">
+        <h3 class="text-base font-semibold leading-7 text-gray-900">${location.name ?? 'No tenemos información sobre el nombre'}</h3>
+    </div>
     <dl class="divide-y divide-blue-100">
-      <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-        <dt class="text-sm font-medium leading-6 text-gray-900 font-['Exo 2']">Nombre</dt>
-        <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">${location.name}</dd>
-      </div>
-      ${location.info.email ?
-            `
+    `
+    if (location.info.email) popupContent += `
         <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
           <dt class="text-sm font-medium leading-6 text-gray-900 font-['Exo 2']">Email</dt>
           <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0"><a href="mailto:${location.info.email}">${location.info.email}</a></dd>
-          </div>
-      ` : ``
-        }
-      ${location.info.telefono ?
-            `
+          </div>`
+
+    if (location.info.telefono) popupContent += `
         <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
           <dt class="text-sm font-medium leading-6 text-gray-900 font-['Exo 2']">Telefono</dt>
             <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0"><a href="tel:${location.info.telefono}">${location.info.telefono}</a></dd>
-        </div>
-      ` : ``
-        }
-      ${location.info.website ?
-            `
+        </div>`
+        
+    if (location.info.website) popupContent += `
         <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
           <dt class="text-sm font-medium leading-6 text-gray-900 font-['Exo 2']">Sitio web</dt>
           <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0"><a href="https://${location.info.website}" target="_blank">${location.name}</a></dd>
-        </div>
-      ` : ``
-        }
-      ${location.info.direccion ?
-            `
+        </div>`
+
+    if (location.info.direccion) popupContent += `
         <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
           <dt class="text-sm font-medium leading-6 text-gray-900 font-['Exo 2']">Dirección</dt>
           <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">${location.info.direccion}</dd>
-        </div>
-      ` : ``
-        }
-      ${location.info.descripcion ?
-            `
+        </div>`
+    
+    if (location.info.descripcion) popupContent += `
         <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
             <dt class="text-sm font-medium leading-6 text-gray-900">Descripción</dt>
             <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">${location.info.descripcion}</dd>
-        </div>
-        ` : ``
-        }
-      ${location.info.horarios ?
-            `
+        </div>`
+
+    if (location.info.horarios) {
+        popupContent += `
         <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
           <dt class="text-sm font-medium leading-6 text-gray-900 font-['Exo 2']">Horarios</dt>
           <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">${location.info.horarios}</dd>
-        </div>
-      ` : ``
-        }
-    </dl>
-    </div>
-    ${location.image ?
-            `
-        <img src="${location.image}" alt="Imagen de ${location.name}" class="flex-1 w-36 h-auto rounded">
-        ` : ``
-        }
-  </div>`;
+        </div>`
+    }
+    popupContent += `</dl> </div>`
+
+    if (location.image) popupContent += `<img src="${location.image}" alt="Imagen de ${location.name}" class="flex-1 w-36 h-auto rounded">`
+
+    popupContent += `</div>`;
+    // Se vincula el contenido emergente al marcador.
     marker.bindPopup(popupContent, { minWidth: "640" });
+     // Se agrega el marcador al objeto de marcadores utilizando el ID de la ubicación como clave.
     markers[location.id] = marker;
 });
+
+
+
+function estaAbierto(horaInicio, horaTermino, minutosInicio = 0, minutosTermino = 0) {
+    var start = horaInicio * 60 + minutosInicio;
+    var end = horaTermino * 60 + minutosTermino;
+    var now = new Date();
+    var time = now.getHours() * 60 + now.getMinutes();
+    return time >= start && time < end;
+}
 
 // Función para mostrar u ocultar marcadores según las selecciones de los checkboxes
 function actualizarMarcadores() {
@@ -587,8 +591,10 @@ function actualizarMarcadores() {
     checkboxes.forEach(function (checkbox) {
         var id = checkbox.id;
         if (checkbox.checked) {
+        // Si el checkbox está marcado, se agrega el marcador al mapa.
             markers[id].addTo(map);
         } else {
+        // Si el checkbox no está marcado, se quita el marcador del mapa.
             map.removeLayer(markers[id]);
         }
     });
@@ -601,6 +607,7 @@ document.querySelectorAll('.ubicacionCheckbox').forEach(function (checkbox) {
 // Llamar a la función inicialmente para mostrar los marcadores según las selecciones predeterminadas
 actualizarMarcadores();
 
+// Funcionalidad para expandir/colapsar detalles de ubicaciones en la lista.
 let listElements = document.querySelectorAll('.list__button--click');
 
 listElements.forEach(listElement => {
