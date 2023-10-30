@@ -20,7 +20,7 @@ var locations = [
             email: null,
             website: "https://agendamiento.reservo.cl/makereserva/agenda/X0FMr8y0T0ycsv5T4153r7Z6q6l5C6?fbclid=PAAaZ8EwbUj4-JeC1Fp2Mo7afzAM0rb9A5V5hk6RXlv50YUYctyRzOQpeOnH4",
             descripcion: "Centro medico de nutrición, ginecología, etc.",
-            horarios: `<span class='underline decoration-indigo-500 font-bold'>Lunes a Viernes:</span><br>10:00 A.M a 19:00 P.M<br><span class='font-bold'>${estaAbierto(10, 19) ? "ABIERTO" : "CERRADO"}</span><br><span class='underline decoration-indigo-500 font-bold'>Sabado y Domingo:</span> <span class='font-bold'>CERRADO</span>`,
+            horarios: `<span class='underline decoration-indigo-500 font-bold'>Lunes a Viernes:</span><br>10:00 A.M a 19:00 P.M<br><span class='underline decoration-indigo-500 font-bold'>Sabado y Domingo:</span><br><span class='font-bold'>CERRADO</span>`,
             horaInicio: '10',
             minutosInicio: null,
             horaTermino: '19',
@@ -56,8 +56,12 @@ var locations = [
             email: 'contacto@convenioswedent.cl',
             website: 'https://convenioswedent.cl/',
             descripcion: "Local de servicios de odontología.",
-            horarios: 'horario de mañana:(lunes a viernes) 09:00 a.m A 13:00 p.m, Horario de tarde: (lunes a viernes) 14:00 p.m A 19:00 p.m ',
-            propietario: 'Empresa(ESAM LIMITADA)'
+            horarios: `<span class='underline decoration-indigo-500 font-bold'>Lunes a Viernes:</span><br>9:00 A.M a 13:00 P.M<br>14:00 P.M a 19:00 P.M<br><span class='underline decoration-indigo-500 font-bold'>Sabado y Domingo:</span><br><span class='font-bold'>CERRADO</span>`,
+            horaInicio: '9',
+            minutosInicio: null,
+            horaTermino: '19',
+            minutosTermino: null,
+            propietario: 'ESAM LIMITADA'
         },
         lat: -41.46044470368143,
         lng: -72.9538604755147,
@@ -73,6 +77,11 @@ var locations = [
             website: null,
             descripcion: "Asesoramiento de imagen y corte de cabello.",
             horarios: "10:30 AM a 20:00 PM todos los dias",
+            horarios: `<span class='underline decoration-indigo-500 font-bold'>Lunes a Domingo:</span><br>10:30 A.M a 20:00 P.M`,
+            horaInicio: '10',
+            minutosInicio: '30',
+            horaTermino: '20',
+            minutosTermino: null,
             propietario: null
         },
         lat: -41.46140738281738,
@@ -90,7 +99,11 @@ var locations = [
             email: null,
             website: null,
             descripcion: "Cyber en el que puedes sacar impresiones, fotocopias y anillados.",
-            horarios: "Lunes a viernes 9:00 AM a 18:00 PM.<br>Sabado y Domingo CERRADO.",
+            horarios: `<span class='underline decoration-indigo-500 font-bold'>Lunes a Viernes:</span><br>9:00 A.M a 18:00 P.M<br><span class='underline decoration-indigo-500 font-bold'>Sabado y Domingo:</span><br><span class='font-bold'>CERRADO</span>`,
+            horaInicio: '9',
+            minutosInicio: null,
+            horaTermino: '18',
+            minutosTermino: null,
             propietario: "Jose Canales"
         },
         lat: -41.46086348691203,
@@ -107,6 +120,10 @@ var locations = [
             website: "https://www.wom.cl/",
             descripcion: "Conexiones inalámbricas y telecomunicaciones.",
             horarios: "<span class='underline decoration-indigo-500 font-bold'>Lunes a Viernes de:</span><br>10:00 AM a 19:00 PM<br><span class='underline decoration-indigo-500 font-bold'>Sabado de:</span><br>10:00 AM a 14:00 PM.<br><span class='underline decoration-indigo-500 font-bold'>Domingo:</span><br><span class='font-bold'>CERRADO.</span>",
+            horaInicio: '10',
+            minutosInicio: null,
+            horaTermino: '19',
+            minutosTermino: null,
             propietario: null
         },
         lat: -41.45989125579157,
@@ -122,7 +139,11 @@ var locations = [
             email: null,
             website: "https://www.cylex.cl/puerto-montt/gr%c3%a1fica-fern%c3%a1ndez-11295340.html",
             descripcion: "Sitio dedicado a la publicidad.",
-            horarios: "<span class='underline decoration-indigo-500 font-bold'>Lunes a Viernes de:</span><br>9:00 AM a 13:00 PM<br>15:00 PM a 18:30 PM.<br><span class='underline decoration-indigo-500 font-bold'>Sabado y Domingo:</span><br><span class='font-bold'>CERRADO.</span>",
+            horarios: `<span class='underline decoration-indigo-500 font-bold'>Lunes a Viernes:</span><br>9:00 A.M a 13:00 P.M<br>15:00 P.M a 18:30 P.M<br><span class='underline decoration-indigo-500 font-bold'>Sabado y Domingo:</span><br><span class='font-bold'>CERRADO</span>`,
+            horaInicio: '9',
+            minutosInicio: null,
+            horaTermino: '18',
+            minutosTermino: '30',
             propietario: null
         },
         lat: -41.46178175495399,
@@ -139,7 +160,11 @@ var locations = [
             email: "rtores@veset.cl",
             website: "veset.cl",
             descripcion: "Lugar de ventas de instrumentación de equipos de pesquera.",
-            horarios: "<span class='underline decoration-indigo-500 font-bold'>Lunes a jueves de:</span><br>8:30 AM a 13:45 PM<br>14:00 PM a 18:45 PM.<br><span class='underline decoration-indigo-500 font-bold'>Viernes de:</span><br>8:30 AM a 13:45 PM.<br><span class='underline decoration-indigo-500 font-bold'>Sabado y domingo:</span><br><span class='font-bold'>CERRADO.</span>",
+            horarios: `<span class='underline decoration-indigo-500 font-bold'>Lunes a Jueves:</span><br>8:30 A.M a 13:45 P.M<br>14:00 P.M a 18:45 P.M<br><span class='underline decoration-indigo-500 font-bold'>Viernes de:</span><br><span class="font-bold">8:30 A.M a 13:45 P.M</span><br><span class='underline decoration-indigo-500 font-bold'>Sabado y Domingo:</span><br><span class='font-bold'>CERRADO</span>`,
+            horaInicio: '8',
+            minutosInicio: '30',
+            horaTermino: '18',
+            minutosTermino: '45',
             propietario: null
         },
         lat: -41.46001804998867,
@@ -154,10 +179,13 @@ var locations = [
             telefono: "652264363",
             email: null,
             website: null,
-            descripcion: "Tienda de ventanas y vidrios.",
-            horarios: "Lunes a viernes de 9 AM a 13:00 PM y de 14:30 a 18:00 PM<br>Sabado y domingo de 9 AM a 13:30 PM.",
-            propietario: null
-        },
+            descripcion: "Tienda de ventanas y vidrios.",            
+            horarios: `<span class='underline decoration-indigo-500 font-bold'>Lunes a Viernes:</span><br>9:00 A.M a 13:00 P.M<br>14:30 P.M a 18:00 P.M<br><span class='underline decoration-indigo-500 font-bold'>Sabado y Domingo:</span><br><span class='font-bold'>9:00 AM a 13:30 P.M</span>`,
+            horaInicio: '9',
+            minutosInicio: null,
+            horaTermino: '18',
+            minutosTermino: null,
+            propietario: null        },
         lat: -41.45978144673535,
         lng: -72.9479702329055,
     },
@@ -172,7 +200,11 @@ var locations = [
             email: null,
             website: "https://www.ecosub.cl/",
             descripcion: "Lugar de ventas sobre articulos destinados al buceo.",
-            horarios: "Horario De Mañana Lunes a Viernes : 9:00 A.M a 17:00 P.M, Horario De Sabado : 10:00 P.M hasta las 13:00 P.M",
+            horarios: `<span class='underline decoration-indigo-500 font-bold'>Lunes a Viernes:</span><br>9:00 A.M a 17:00 P.M<br><span class='underline decoration-indigo-500 font-bold'>Sabado y Domingo:</span><br><span class='font-bold'>10:00 A.M a 13:00 P.M</span>`,
+            horaInicio: '9',
+            minutosInicio: null,
+            horaTermino: '17',
+            minutosTermino: null,
             propietario: null
         },
         lat: -41.45759,
@@ -188,7 +220,11 @@ var locations = [
             email: "maiva.envases@gmail.com",
             website: null,
             descripcion: "Empresa proveedora de envases de todo tipo.",
-            horarios: 'Lunes a viernes 9:00 AM a 18:30 PM.<br>Sabado 9:30 AM a 14:00 PM. Domingo CERRADO.',
+            horarios: `<span class='underline decoration-indigo-500 font-bold'>Lunes a Viernes:</span><br>9:00 A.M a 18:30 P.M<br><span class='underline decoration-indigo-500 font-bold'>Sabado:</span><br><span class='font-bold'>9:30 A.M a 14:00 P.M</span><br><span class='underline decoration-indigo-500 font-bold'>Domingo:</span><br><span class='font-bold'>CERRADO</span>`,
+            horaInicio: '9',
+            minutosInicio: null,
+            horaTermino: '18',
+            minutosTermino: '30',
             propietario: null
         },
         lat: -41.4611044,
@@ -204,8 +240,12 @@ var locations = [
             email: null,
             website: " http://www.elcastor.cl/",
             descripcion: "Venta de  maderas (Pino Oregón, Pino Insigne y Maderas Nativas en Puerto Montt).",
-            horarios: "(lunes a domingo) 8:30 a.m A 18:00 p.m, ",
-            propietario: null
+            horarios: `<span class='underline decoration-indigo-500 font-bold'>Lunes a Domingo:</span><br>8:30 A.M a 18:00 P.M`,
+            horaInicio: '8',
+            minutosInicio: '30',
+            horaTermino: '18',
+            minutosTermino: null,
+            propietario: null 
         },
         lat: -41.46074043942762,
         lng: -72.9530957115375,
@@ -221,7 +261,11 @@ var locations = [
             email: null,
             website: null,
             descripcion: "Ferreteria y maestranza industrial.",
-            horarios: null,
+            horarios: `<span class='underline decoration-indigo-500 font-bold'>NO CONTAMOS CON ESTA INFORMACIÓN</span>`,
+            horaInicio: null,
+            minutosInicio: null,
+            horaTermino: null,
+            minutosTermino: null,
             propietario: "Javier Angulo Barria"
         },
         lat: -41.46074799173023,
@@ -238,6 +282,11 @@ var locations = [
             website: "http://www.reloncaviservicios.cl/",
             descripcion: "Articulos de ferretería.",
             horarios: "Lunes a viernes 8:30 AM a 18:30 PM.<br>Sabado y Domingo CERRADO.",
+            horarios: `<span class='underline decoration-indigo-500 font-bold'>Lunes a Viernes:</span><br>8:30 A.M a 18:30 P.M<br><span class='underline decoration-indigo-500 font-bold'>Sabado y Domingo:</span><br><span class='font-bold'>CERRADO</span>`,
+            horaInicio: '8',
+            minutosInicio: '30',
+            horaTermino: '18',
+            minutosTermino: '30',
             propietario: null
         },
         lat: -41.46114040581125,
@@ -254,7 +303,11 @@ var locations = [
             email: null,
             website: null,
             descripcion: "Local de hojalaterias.",
-            horarios: null,
+            horarios: `<span class='underline decoration-indigo-500 font-bold'>NO CONTAMOS CON ESTA INFORMACIÓN</span>`,
+            horaInicio: null,
+            minutosInicio: null,
+            horaTermino: null,
+            minutosTermino: null,
             propietario: null
         },
         lat: null,
@@ -271,8 +324,12 @@ var locations = [
             email: 'jefeoperaciones@esamltda.cl',
             website: 'https://www.esamltda.cl/',
             descripcion: "Empresa dedicada al orden ambiental.",
-            horarios: '08:15 A.M a 13:00 P.M(lunes a viernes(Mañana)),13:30 P.M hasta las 18:00 P.M(lunes a viernes(tarde))',
-            propietario: 'Empresa(ESAM LIMITADA)'
+            horarios: `<span class='underline decoration-indigo-500 font-bold'>Lunes a Viernes:</span><br>8:15 A.M a 13:00 P.M<br>13:30 P.M a 18:30 P.M<br><span class='underline decoration-indigo-500 font-bold'>Sabado y Domingo:</span><br><span class='font-bold'>CERRADO</span>`,
+            horaInicio: '8',
+            minutosInicio: '15',
+            horaTermino: '18',
+            minutosTermino: '30',
+            propietario: 'ESAM LIMITADA'
         },
         lat: -41.461680247810115,
         lng: -72.94881523964628,
@@ -553,14 +610,14 @@ locations.forEach(function (location) {
     if (location.info.descripcion) popupContent += `
         <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
             <dt class="text-sm font-medium leading-6 text-gray-900">Descripción</dt>
-            <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">${location.info.descripcion}</dd>
+            <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0 overflow-auto">${location.info.descripcion}</dd>
         </div>`
 
     if (location.info.horarios) {
         popupContent += `
         <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-          <dt class="text-sm font-medium leading-6 text-gray-900 font-['Exo 2']">Horarios</dt>
-          <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">${location.info.horarios}</dd>
+          <dt class="text-sm font-medium leading-6 text-gray-900 font-sans">Horarios<br><span class='font-bold py-4 font-serif'>${estaAbierto(location.info.horaInicio, location.info.horaTermino, location.minutosInicio, location.info.minutosTermino) ? "ABIERTO" : "CERRADO"}</span></dt>
+          <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0 overflow-auto">${location.info.horarios}</dd>
         </div>`
     }
     popupContent += `</dl> </div>`

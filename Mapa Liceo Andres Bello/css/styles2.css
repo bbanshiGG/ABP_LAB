@@ -123,15 +123,23 @@ span.horizontal-list h1{
     height: 100% ;
     width: 100% ;
 }
+
 .footer__style{
+    z-index: 2;
+    display: block;
     background-color: #f8f9fa;
     display: flex;
-    flex-direction: row ;
-}  
-
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 200px;
+    font-size: 20px;
+}
 .footer__style--text{
-    text-align: center;
+
+}
+.footer__style--copyright{
+
 }
 .footer__style--redes__sociales{
-    text-align: end;
+    
 }
