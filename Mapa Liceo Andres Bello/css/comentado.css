@@ -1,10 +1,12 @@
+/* Importación de fuentes desde Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Exo+2&family=Poppins&display=swap');
+
 /* Estilos generales para todos los elementos */
 * {
     margin: 0; /* Elimina el margen predeterminado en todos los elementos */
     padding: 0; /* Elimina el relleno predeterminado en todos los elementos */
-    border: 0; /* Elimina el borde predeterminado en todos los elementos */
-} 
+    border: 0;  /* Elimina el borde predeterminado en todos los elementos */
+}
 
 /* Estilos para el cuerpo de la página */
 body {
@@ -13,7 +15,7 @@ body {
 }
 
 /* Estilos para elementos <i> */
-i{
+i {
     color: #0d6efd; /* Establece el color de texto de los elementos <i> en azul */
 }
 
@@ -23,27 +25,30 @@ span.horizontal-list {
     position: sticky; /* Hace que la lista sea pegajosa en la parte superior */
     top: 0;
     display: block;
-    background-color: #f8f9fa;  /* Fondo gris claro */
+    background-color: #f8f9fa; /* Fondo gris claro */
     display: flex; /* Organiza elementos en fila */
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 50px;
     font-size: 20px;
-    box-shadow: 0 1px 3px 0 rgba(255, 255, 0, 0.1), 0 1px 2px -1px rgb(255 255 0 / 0.1);  
+    box-shadow: 0 1px 3px 0 rgba(255, 255, 0, 0.1), 0 1px 2px -1px rgb(255 255 0 / 0.1);  /* Agrega sombra */
 }
+
 /* Estilos para imágenes dentro de la lista horizontal */
 span.horizontal-list img {
     margin-right: 7px; /* Agrega margen a las imágenes dentro de la lista horizontal */
 }
-/* Estilos para encabezados <h1> dentro de la lista horizontal */
 
-span.horizontal-list h1{
+/* Estilos para encabezados <h1> dentro de la lista horizontal */
+span.horizontal-list h1 {
     padding-top: 8px; /* Añade un espacio superior a los encabezados */
 }
+
 /* Estilos para la navegación */
 .nav {
     width: 300px; /* Establece un ancho fijo para la navegación */
 }
+
 /* Estilos para enlaces dentro de la navegación */
 .nav__link {
     color: #303440; /* Define el color de texto de los enlaces de navegación */
@@ -61,11 +66,10 @@ span.horizontal-list h1{
 /* Estilos al pasar el cursor sobre enlaces "inside" */
 .nav__link--inside:hover {
     background-color: #e4e4e4; /* Cambia el fondo al pasar el cursor */
-
 }
 
 /* Estilos para una lista */
-.list{
+.list {
     background-color: #e4e4e4;
     font-family: 'Exo 2', sans-serif; /* Utiliza la fuente 'Exo 2' */
     font-size: large;
@@ -119,34 +123,28 @@ span.horizontal-list h1{
     transition: height .9s; /* Agrega una transición para la altura */
     height: 0; /* Inicialmente oculta los elementos desplegables */
 }
-/* Establece un diseño flexible para un elemento con la clase wrapper. */
-.wrapper {
-    display: flex;
-    flex-direction: row; /* Lo posiciona de forma de fila */
-}
 
 /* Estilos para un contenedor de mapa */
-#map {  
+#map {
     z-index: 1;
-    position: relative ;
-    width: 100% ;
-    border: 1px solid #0d6efd;  /* Define un borde alrededor del mapa */
+    position: relative;
+    width: 100%;
+    border: 1px solid #0d6efd; /* Define un borde alrededor del mapa */
 }
 
 /* Estilos para elementos hijos de #map */
-#map > *{
-    display: block ;
-    position: absolute ;
-    top: 0 ;
-    right: 0 ;
-    bottom: 0 ;
-    left: 0 ;
-    margin: 0 ;
-    padding: 0 ;
-    height: 100% ;
-    width: 100% ;
+#map > * {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
 }
-
 
 /* Estilo para el footer principal */
 .footer__style {
@@ -155,40 +153,40 @@ span.horizontal-list h1{
     padding: 20px;
     text-align: center;
 }
-  
+
 /* Estilo para el texto en el footer */
 .footer__style--text {
     font-size: 18px;
     margin-bottom: 10px;
 }
-  
+
 /* Estilo para la imagen en el footer */
 #INSIGNIA__LICEO {
     width: 35px;
     height: auto;
     margin-right: 10px;
 }
-  
+
 /* Estilo para el párrafo de derechos de autor en el footer */
 .footer__style--copyright p {
     font-size: 14px;
     margin: 0;
 }
-  
+
 /* Estilo para la lista de redes sociales en el footer */
-.footer_style--redes_sociales ul {
+.footer__style--redes__sociales ul {
     list-style: none;
     padding: 0;
 }
 
 /* Estilo para los iconos de redes sociales */
-.footer_style--redes_sociales li {
+.footer__style--redes__sociales li {
     display: inline;
     margin-right: 10px;
 }
-  
+
 /* Estilo para los iconos de redes sociales */
-.footer_style--redes_sociales a {
+.footer__style--redes__sociales a {
     color: #fff;
     text-decoration: none;
     font-size: 24px;

@@ -281,8 +281,7 @@ var locations = [
             email: "Msalgado@reloncaviservicios.cl",
             website: "http://www.reloncaviservicios.cl/",
             descripcion: "Articulos de ferretería.",
-            horarios: "Lunes a viernes 8:30 AM a 18:30 PM.<br>Sabado y Domingo CERRADO.",
-            horarios: `<span class='underline decoration-indigo-500 font-bold'>Lunes a Viernes:</span><br>8:30 A.M a 18:30 P.M<br><span class='underline decoration-indigo-500 font-bold'>Sabado y Domingo:</span><br><span class='font-bold'>CERRADO</span>`,
+            horarios: "<span class='underline decoration-indigo-500 font-bold'>Lunes a Viernes:</span><br>8:30 A.M a 18:30 P.M<br><span class='underline decoration-indigo-500 font-bold'>Sabado y Domingo:</span><br><span class='font-bold'>CERRADO</span>",
             horaInicio: '8',
             minutosInicio: '30',
             horaTermino: '18',
@@ -345,7 +344,7 @@ var locations = [
             email: null,
             website: null,
             descripcion: "Local de venta de alimentos (saco de papa, y trigo).",
-            horarios: null,
+            horarios: "<span class='underline decoration-indigo-500 font-bold'>NO CONTAMOS CON ESTA INFORMACIÓN</span>",
             propietario: null
         },
         lat: -41.461005372851375,
@@ -361,8 +360,13 @@ var locations = [
             email: null,
             website: null,
             descripcion: "Local de alimentos frutas y verduras.",
-            horarios: "Desde las 8:00 a 21:00",
-            propietario: "Jose Conquera "
+            horarios: "<span class='underline decoration-indigo-500 font-bold'>Lunes a Viernes:</span><br>8:00 A.M a 21:00 P.M<br><span class='underline decoration-indigo-500 font-bold'>Sabado y Domingo:</span><br><span class='font-bold'>CERRADO</span>",
+            propietario: "Jose Conquera ",
+            horaInicio: '8',
+            minutosInicio: '0',
+            horaTermino: '21',
+            minutosTermino: '0',
+
         },
         lat: -41.46098602835041,
         lng: -72.9512317605798,
@@ -377,7 +381,7 @@ var locations = [
             email: null,
             website: null,
             descripcion: "Frutería.",
-            horarios: null,
+            horarios: "<span class='underline decoration-indigo-500 font-bold'>NO CONTAMOS CON ESTA INFORMACIÓN</span>",
             propietario: 'Rafael Gonzalez'
         },
         lat: -41.46017978717117,
@@ -393,8 +397,12 @@ var locations = [
             email: null,
             website: null,
             descripcion: "Venta de alimentos  (avena, trigo y papas.).",
-            horarios: 'Lunes a Viernes: 8:30AM a 10:00PM',
-            propietario: null
+            horarios: "<span class='underline decoration-indigo-500 font-bold'>Lunes a Viernes:</span><br>8:30 A.M a 10:00 P.M<br><span class='underline decoration-indigo-500 font-bold'>Sabado y Domingo:</span><br><span class='font-bold'>CERRADO</span>",
+            propietario: null,
+            horaInicio: '8',
+            minutosInicio: '30',
+            horaTermino: '22',
+            minutosTermino: '0'
         },
         lat: -41.4614272,
         lng: -72.9493075,
@@ -410,8 +418,12 @@ var locations = [
             email: null,
             website: null,
             descripcion: "Local de comida rapida.",
-            horarios: "Lunes a Sabado 10:00/1:00, Domingo 12:00/20:00",
-            propietario: "Manuel Valenzuela"
+            horarios: "<span class='underline decoration-indigo-500 font-bold'>Lunes a Sabado:</span><br>10:00 A.M a 13:00 P.M<br><span class='underline decoration-indigo-500 font-bold'>Domingo:</span><br>10:00 A.M a 1:00 P.M<br>",
+            propietario: "Manuel Valenzuela",
+            horaInicio: '10',
+            minutosInicio: '0',
+            horaTermino:'13',
+            minutosTermino:'0'
         },
         lat: -41.4611284151355,
         lng: -72.95077873458679,
@@ -426,7 +438,7 @@ var locations = [
             email: null,
             website: null,
             descripcion: "Venta de completos y alimentos variados.",
-            horarios: null,
+            horarios: "<span class='underline decoration-indigo-500 font-bold'>NO CONTAMOS CON ESTA INFORMACIÓN</span>",
             propietario: 'Carlos Astorga'
         },
         lat: -41.46098653922191,
@@ -442,7 +454,7 @@ var locations = [
             email: null,
             website: null,
             descripcion: "Sitio de comida rapida.",
-            horarios: null,
+            horarios: "<span class='underline decoration-indigo-500 font-bold'>NO CONTAMOS CON ESTA INFORMACIÓN</span>",
             propietario: null
         },
         lat: -41.4612624,
@@ -458,9 +470,13 @@ var locations = [
             email: 'Tsukifusion@gmail.com',
             website: ' https://tsukifusion.webnode.cl/',
             descripcion: "Sitio de Comida China.",
-            horarios: 'De las 11:00 a las 21:00',
-            propietario: 'Jenifer Degens'
-        },
+            horarios: "<span class='underline decoration-indigo-500 font-bold'>Lunes a Domingo:</span><br>11:00 A.M a 21:00 P.M",
+            propietario: 'Jenifer Degens',
+            horaInicio: '11',
+            minutosInicio: '0',
+            horaTermino:'21',
+            minutosTermino:'0'
+                },
         lat: -41.46084437588396,
         lng: -72.95156065359845,
     },
@@ -474,8 +490,12 @@ var locations = [
             email: null,
             website: null,
             descripcion: "Sitio de comidas caseras.",
-            horarios: '12 a.m  4p.m de Lunes a Viernes, Sabado y Domingo cerrado',
-            propietario: null
+            horarios: "<span class='underline decoration-indigo-500 font-bold'>Lunes a Viernes:</span><br>12:00 A.M a 16:00 P.M<br><span class='underline decoration-indigo-500 font-bold'>Sabado y Domingo:</span><br><span class='font-bold'>CERRADO</span>",
+            propietario: null,
+            horaInicio: '12',
+            minutosInicio: '0',
+            horaTermino:'16',
+            minutosTermino:'0'
         },
         lat: -41.46115121390741,
         lng: -72.94992050582246,
@@ -490,9 +510,13 @@ var locations = [
             telefono: "56973523613",
             email: null,
             website: null,
-            descripcion: "lLugar de Mecanica ligera, Alineacion, Balanceo, Neumaticos, Frenos, Diagnostico y Manutencion general",
-            horarios: "Lun a Vier 9:00/18:30, Sab 9:00/14:00",
-            propietario: null
+            descripcion: "Lugar de Mecanica ligera, Alineacion, Balanceo, Neumaticos, Frenos, Diagnostico y Manutencion general",
+            horarios: "<span class='underline decoration-indigo-500 font-bold'>Lunes a Viernes:</span><br>9:00 A.M a 18:30 P.M<br><span class='underline decoration-indigo-500 font-bold'>Sabado:</span><br><span class='font-bold'>9:00 A.M a 14:00 P.M</span><br><span class='underline decoration-indigo-500 font-bold'>Domingo:</span><br><span class='font-bold'>CERRADO</span>`",
+            propietario: null,
+            horaInicio: '9',
+            minutosInicio: '0',
+            horaTermino:'18',
+            minutosTermino:'30'            
         },
         lat: -41.460957240346055,
         lng: -72.94880609292974,
@@ -507,8 +531,12 @@ var locations = [
             email: null,
             website: null,
             descripcion: "Centro mecanico.",
-            horarios: 'Lunes a Viernes: 9:30AM a 17:30PM',
-            propietario: null
+            horarios: "<span class='underline decoration-indigo-500 font-bold'>Lunes a Viernes:</span><br>9:30 A.M a 17:30 P.M<br><span class='underline decoration-indigo-500 font-bold'>Sabado y Domingo:</span><br><span class='font-bold'>CERRADO</span>",
+            propietario: null,
+            horaInicio: '9',
+            minutosInicio: '30',
+            horaTermino:'17',
+            minutosTermino:'30'       
         },
         lat: -41.4608193,
         lng: -72.9510124,
@@ -523,7 +551,7 @@ var locations = [
             email: null,
             website: null,
             descripcion: "Sitio de automotriz.",
-            horarios: null,
+            horarios: "<span class='underline decoration-indigo-500 font-bold'>NO CONTAMOS CON ESTA INFORMACIÓN</span>",
             propietario: null
         },
         lat: -41.46096457412498,
@@ -539,7 +567,7 @@ var locations = [
             email: 'carclean57@gmail.com',
             website: null,
             descripcion: "Ofrecen servicio de lavado de autos.",
-            horarios: null,
+            horarios: "<span class='underline decoration-indigo-500 font-bold'>NO CONTAMOS CON ESTA INFORMACIÓN</span>",
             propietario: null
         },
         lat: -41.45976710661611,
@@ -555,8 +583,12 @@ var locations = [
             email: "servitecapuertomontt@gmail.com",
             website: "Servitecapuertomontt.cl",
             descripcion: "Sitio dedicado a venta de neumaticos.",
-            horarios: "Lunes a viernes 9:30 AM a 18:00 PM.<br>Sabado y Domingo CERRADO.",
-            propietario: "Fredy Bustamante."
+            horarios: "<span class='underline decoration-indigo-500 font-bold'>Lunes a Viernes:</span><br>9:30 A.M a 18:00 P.M<br><span class='underline decoration-indigo-500 font-bold'>Sabado y Domingo:</span><br><span class='font-bold'>CERRADO</span>",
+            propietario: "Fredy Bustamante.",
+            horaInicio: '9',
+            minutosInicio: '30',
+            horaTermino:'18',
+            minutosTermino:'0'  
         },
         lat: -41.46106716518632,
         lng: -72.94890878756738,
