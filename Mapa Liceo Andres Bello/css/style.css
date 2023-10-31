@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,300&family=Indie+Flower&family=Poppins&display=swap');
 /* Estilos generales para todos los elementos */
 * {
     margin: 0; /* Elimina el margen predeterminado en todos los elementos */
@@ -8,7 +8,7 @@
 
 /* Estilos para el cuerpo de la página */
 body {
-    background-color: #e4e4e4; /* Establece el fondo en un color gris claro */
+    background-color: red; /* Establece el fondo en un color gris claro */
     font-family: 'Poppins', sans-serif; /* Utiliza la fuente 'Poppins' como fuente principal */
 }
 
@@ -25,11 +25,11 @@ span.horizontal-list {
     display: block;
     background-color: #f8f9fa;  /* Fondo gris claro */
     display: flex; /* Organiza elementos en fila */
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 50px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 200px;
     font-size: 20px;
-    box-shadow: 0 1px 3px 0 rgba(255, 255, 0, 0.1), 0 1px 2px -1px rgb(255 255 0 / 0.1);  
+    box-shadow: 0 1px 3px 0 #333;  
 }
 /* Estilos para imágenes dentro de la lista horizontal */
 span.horizontal-list img {
@@ -40,6 +40,7 @@ span.horizontal-list img {
 span.horizontal-list h1{
     padding-top: 8px; /* Añade un espacio superior a los encabezados */
 }
+
 /* Estilos para la navegación */
 .nav {
     width: 300px; /* Establece un ancho fijo para la navegación */
@@ -192,4 +193,9 @@ span.horizontal-list h1{
     color: #fff;
     text-decoration: none;
     font-size: 24px;
+}
+/* Easter egg :v */
+.lol{
+    font-family: 'Indie Flower', cursive;
+    color: #a70000;
 }
