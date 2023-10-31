@@ -124,22 +124,49 @@ span.horizontal-list h1{
     width: 100% ;
 }
 
-.footer__style{
-    z-index: 2;
-    display: block;
+
+/* Estilo para el footer principal */
+.footer__style {
     background-color: #f8f9fa;
-    display: flex;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 200px;
-    font-size: 20px;
+    color: #333;
+    padding: 20px;
+    text-align: center;
 }
-.footer__style--text{
-
+  
+/* Estilo para el texto en el footer */
+.footer__style--text {
+    font-size: 18px;
+    margin-bottom: 10px;
 }
-.footer__style--copyright{
-
+  
+/* Estilo para la imagen en el footer */
+#INSIGNIA__LICEO {
+    width: 35px;
+    height: auto;
+    margin-right: 10px;
 }
-.footer__style--redes__sociales{
-    
+  
+/* Estilo para el párrafo de derechos de autor en el footer */
+.footer__style--copyright p {
+    font-size: 14px;
+    margin: 0;
 }
+  
+/* Estilo para la lista de redes sociales en el footer */
+.footer__style--redes__sociales ul {
+    list-style: none;
+    padding: 0;
+}
+  
+.footer__style--redes__sociales li {
+    display: inline;
+    margin-right: 10px;
+}
+  
+/* Estilo para los iconos de redes sociales */
+.footer__style--redes__sociales a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+  
