@@ -131,7 +131,7 @@ span.horizontal-list h1{
     z-index: 1;
     position: relative ;
     width: 100% ;
-    border: 1px solid #0d6efd;  /* Define un borde alrededor del mapa */
+    border: 2px solid black;  /* Define un borde alrededor del mapa */
 }
 
 /* Estilos para elementos hijos de #map */
